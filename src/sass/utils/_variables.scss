@@ -1,0 +1,10 @@
+// Використання кольорів в проекті
+$colors: (
+  'light': #ffffff,
+);
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+// Для використання - пишемо властивість, замість значення викликаємо функцію getColor('тут назва необхідного кольору з карти'). ПРИКЛАД:
+// background-color: getColor('light');
