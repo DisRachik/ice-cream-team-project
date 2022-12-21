@@ -1,6 +1,18 @@
 // Використання кольорів в проекті
 $colors: (
-  'light': #ffffff,
+  // Кольори для тексту
+  'primary-text': #fcfcfc,
+  'secondary-text': #131313,
+  'tretiary-text': #f8d24e,
+  'copyright-text': #7a7a7a,
+
+  //Кольори-події для лінків
+  'link-default': #f8d24e,
+  'link-hover': #0a8817,
+  'link-focus': #fcfcfc,
+  'link-disabled': #ababab,
+  //Колір основного бекграунду
+  'main-bg': #84a178
 );
 @function getColor($key) {
   @return map-get($colors, $key);
