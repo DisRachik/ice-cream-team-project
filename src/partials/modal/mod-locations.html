@@ -1,21 +1,34 @@
-<div class="backdrop is hidden" data-modal>
-  <div class="modal">
-    <button type="button" class="button-modal-close" data-modal-close>
-<svg width="20" height="20">
-  <use href="./images/icons.svg#close-btn"></use>
-</svg>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal" data-modal-window>
+    <button class="modal-btn" data-modal-close>
+      <svg width="13.33" height="13.37">
+        <use
+          href="./images/icons/modal-location.svg#icon-clarity_close-line"
+        ></use>
+      </svg>
     </button>
 
-    <h1 class="modal-title">Our Locations</h1>
+    <strong class="modal-label">Our Locations</strong>
 
     <img
-    srcset=""
-    src=""
-    alt="map poltava"
+      srcset="
+        ./images/modal-location/modal-location-md-sm@1x.jpg 224w,
+        ./images/modal-location/modal-location-md-sm@2x.jpg 448w,
+        ./images/modal-location/modal-location-lg@1x.jpg    448w,
+        ./images/modal-location/modal-location-lg@2x.jpg    896w
+      "
+      src="./images/modal-location/modal-location-md-sm@1x.jpg"
+      sizes="(min-width: 1200px) 448px, (min-width: 768px) 448px, (min-width: 480px) 224px, 100vw"
+      alt="map"
+      min-width="224px"
+      class="portfolio-img"
+    />
 
-  />
-       <button type="submit" class="send-form">Open map</button>
-      </div>
-    </form>
+    <a
+      href="https://goo.gl/maps/kfap5ZEkbQdWX6Vp9"
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+      >Open map</a
+    >
   </div>
 </div>
