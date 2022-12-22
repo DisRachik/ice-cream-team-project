@@ -1,0 +1,326 @@
+svg {
+  display: block;
+}
+
+.products {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__lable {
+    font-size: 18px;
+    line-height: 1.22;
+
+    margin-bottom: 12px;
+
+    font-weight: 800;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    @include media('tablet') {
+      font-size: 22px;
+      line-height: 1.23;
+    }
+
+    @include media('desktop') {
+      font-size: 30px;
+      line-height: 1.23;
+    }
+  }
+
+  &__title {
+    margin-bottom: 148px;
+
+    font-family: 'Seymour One', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.26;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: getColor('secondary-text');
+
+    @media screen and (max-width: 319px) {
+      font-size: calc(20px + 10 * ((100vw - 220px) / (319 - 220)));
+    }
+
+    @include media('tablet') {
+      margin-bottom: 200px;
+      font-size: 34px;
+      line-height: 1.26;
+    }
+
+    @include media('desktop') {
+      margin-bottom: 303px;
+      font-size: 36px;
+      line-height: 1.25;
+    }
+  }
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 168px;
+
+  @include media('tablet') {
+    gap: 16px;
+  }
+
+  @include media('desktop') {
+    gap: 29px;
+  }
+}
+
+.products__item {
+  display: flex;
+  position: relative;
+
+  flex-basis: 100%;
+  height: 420px;
+
+  padding-top: 123px;
+  padding-bottom: 16px;
+
+  background-color: #aec6a5;
+  border-radius: 24px;
+
+  @include media('tablet') {
+    flex-basis: calc((100% - 32px) / 3);
+
+    padding-top: 108px;
+
+    height: 428px;
+  }
+
+  @include media('desktop') {
+    padding-top: 165px;
+    padding-bottom: 60px;
+    flex-basis: calc((100% - 58px) / 3);
+    height: 536px;
+  }
+}
+
+.products__item:nth-child(2) {
+  background-color: #efd478;
+}
+
+.products__item:nth-child(3) {
+  background-color: #d6936d;
+}
+
+.products__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0 40px;
+
+  // height: 281px;
+
+  @include media('tablet') {
+    padding: 0 26px;
+  }
+
+  @include media('desktop') {
+    padding: 0 75px;
+  }
+}
+
+.products__thumb {
+  position: absolute;
+  top: -97px;
+  left: 50%;
+
+  transform: translate(-50%, 0);
+
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  &--green {
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  }
+
+  &--yellow {
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  }
+
+  &--brown {
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  }
+
+  @include media('tablet') {
+    top: -108px;
+  }
+
+  @include media('desktop') {
+    top: -167px;
+
+    width: 302px;
+    height: 302px;
+  }
+}
+
+.products__thumb--green::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -11px;
+
+  background-image: url(../images/products/ice-cream-200-1x.png);
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/products/ice-cream-200-2x.png);
+  }
+
+  @include media('desktop') {
+    top: -16px;
+    background-image: url(../images/products/ice-cream-1200-1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/ice-cream-1200-2x.png);
+    }
+  }
+}
+
+.products__thumb--yellow::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -11px;
+
+  background-image: url(../images/products/ice-coffee-200-1x.png);
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/products/ice-coffee-200-2x.png);
+  }
+
+  @include media('desktop') {
+    top: -16px;
+    background-image: url(../images/products/ice-coffee-1200-1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/ice-coffee-1200-2x.png);
+    }
+  }
+}
+
+.products__thumb--brown::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -11px;
+
+  background-image: url(../images/products/milkshakes-200-1x.png);
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/products/milkshakes-200-2x.png);
+  }
+
+  @include media('desktop') {
+    top: -16px;
+    background-image: url(../images/products/milkshakes-1200-1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/milkshakes-1200-2x.png);
+    }
+  }
+}
+
+.products__name {
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: getColor('secondary-text');
+
+  @include media('tablet') {
+    font-size: 22px;
+    line-height: 1.23;
+  }
+
+  @include media('desktop') {
+    margin-bottom: 66px;
+    font-size: 30px;
+    line-height: 1.23;
+  }
+}
+
+.products__description {
+  margin-bottom: auto;
+  font-size: 14px;
+  line-height: 1.76;
+
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-bottom: auto;
+
+  color: getColor('secondary-text');
+
+  @include media('desctop') {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+
+.products__btn {
+  // padding: 16px 0;
+
+  color: getColor('secondary-text');
+  @include animated(color);
+
+  &:hover {
+    color: getColor('link-hover');
+  }
+
+  &:focus {
+    color: getColor('link-focus');
+  }
+}
+
+.products__icon {
+  fill: currentColor;
+}
