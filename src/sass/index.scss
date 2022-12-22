@@ -1,6 +1,66 @@
+// =======================
+// Підключені бібліотеки
+// =======================
+
 @import './libs/common';
 
+// ==============================
+// Скидування дефолтних стилів
+// ==============================
 @import './base/reset';
+
+// ====================
+// утиліти SASS
+// ====================
 @import './utils/variables';
 @import './utils/mixin';
+
+// ===============
+// Базові стилі
+// ===============
 @import './base/base';
+
+// =================
+// Секції сторінки
+// =================
+
+// Mykola Tarabukin - Header
+@import './components/header';
+// Ruslan - Hero
+@import './components/hero';
+// Tetiana Nivchyk - Products
+@import './components/products';
+// Tetiana Pesotska - About
+@import './components/about';
+// Yaroslav - Advantages
+@import './components/advantages';
+// Rostyslav - Gallery
+@import './components/gallery';
+// Rostyslav - Reviews
+@import './components/reviews';
+// Kirill - Contacts
+@import './components/contacts';
+// Юлия - Footer
+@import './components/footer';
+
+// ====================
+// Мобільне меню
+// ====================
+
+// Mykola Tarabukin - mobile-menu
+@import './components/modal/mobile-menu';
+
+// ====================
+// Модальні вікна
+// ====================
+
+// Mykola Tarabukin - mod-header
+@import './components/modal/mod-header';
+// Radchenko Ivan - Modal ingridients of products
+@import './components/modal/mod-ingridents';
+// Tetiana Pesotska - mod-about
+@import './components/modal/mod-about';
+// Tetiana Ustymenko  - mod-locations
+@import './components/modal/mod-locations';
+// Tetiana Ustymenko - mod-franchise
+@import './components/modal/mod-franchise';
