@@ -1,14 +1,15 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="modal" data-modal-window>
-    <button class="modal-btn" data-modal-close>
+    <button class="modal__btn" data-modal-close>
       <svg width="13.33" height="13.37">
         <use
+          class="modal__icon"
           href="./images/icons/modal-location.svg#icon-clarity_close-line"
         ></use>
       </svg>
     </button>
 
-    <strong class="modal-label">Our Locations</strong>
+    <strong class="modal__label">Our Locations</strong>
 
     <img
       srcset="
@@ -21,13 +22,14 @@
       sizes="(min-width: 1200px) 448px, (min-width: 768px) 448px, (min-width: 480px) 224px, 100vw"
       alt="map"
       min-width="224px"
-      class="portfolio-img"
+      class="modal__img"
     />
 
     <a
       href="https://goo.gl/maps/kfap5ZEkbQdWX6Vp9"
       target="_blank"
       rel="noopener noreferrer nofollow"
+      class="modal__link"
       >Open map</a
     >
   </div>
