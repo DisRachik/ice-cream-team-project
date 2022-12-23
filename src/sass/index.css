@@ -1,0 +1,258 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+button {
+  padding: 0;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+input,
+button,
+textarea {
+  padding: 0;
+  font-family: inherit;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  outline: unset;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 480px;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    padding-right: 32px;
+    padding-left: 32px;
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding-right: 16px;
+    padding-left: 16px;
+    max-width: 1200px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.about {
+  padding-top: 61px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.about__text {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+@media screen and (min-width: 768px) {
+  .about__text {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__text {
+    font-size: 30px;
+  }
+}
+
+.about__title {
+  margin-bottom: 32px;
+  font-family: "Seymour One", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+@media screen and (min-width: 768px) {
+  .about__title {
+    margin-bottom: 72px;
+    font-size: 34px;
+    line-height: 1.26;
+    letter-spacing: 0.06em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__title {
+    margin-bottom: 82px;
+    font-size: 36px;
+    line-height: 1.25;
+  }
+}
+
+.about__desc-one {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.76;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FCFCFC;
+}
+@media screen and (min-width: 768px) {
+  .about__desc-one {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__desc-one {
+    font-size: 16px;
+  }
+}
+
+.about__desc-two {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.62;
+  text-align: center;
+  color: #FCFCFC;
+}
+@media screen and (min-width: 768px) {
+  .about__desc-two {
+    margin-bottom: 8px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__desc-two {
+    font-size: 14px;
+    line-height: 1.94;
+  }
+}
+
+.about__desc-three {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .about__desc-three {
+    margin-bottom: 32px;
+    font-size: 12px;
+    line-height: 1.94;
+    letter-spacing: 0.04em;
+    color: #FCFCFC;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__desc-three {
+    margin-bottom: 54px;
+    font-size: 14px;
+  }
+}
+
+.about__btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 8px;
+  width: 164px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 34px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: #000000;
+  background-color: #F8D24E;
+}
+.about__btn:hover {
+  background-color: #0A8817;
+  color: #000000;
+}
+.about__btn:focus {
+  background-color: #0A8817;
+  color: #FCFCFC;
+}
+.about__btn:disabled {
+  background-color: #ABABAB;
+  color: #000000;
+}
+
+.about__icon {
+  fill: #000000;
+}
+.about__icon:focus {
+  fill: #FCFCFC;
+}/*# sourceMappingURL=index.css.map */
