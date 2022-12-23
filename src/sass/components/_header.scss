@@ -44,7 +44,7 @@ background-color: #84A178;
 .header__butt.header__btn-tabldesc {
     display: none;
     @media screen and (min-width: 768px) {
-        display: block; 
+        display: flex; 
         margin-left: 36px; 
     }
 }
@@ -67,6 +67,7 @@ display: block;
 @include animated(color, background-color);
 @media screen and (max-width: 768px) {               
     margin: 0 auto;
+    display: flex;
 }   
     &:hover {
         background-color: getColor('link-hover');
