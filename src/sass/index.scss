@@ -19,3 +19,7 @@
 // Базові стилі
 // ===============
 @import './base/base';
+
+
+@import './src/sass/components/_header.scss';
+@import 'src/sass/components/modal/_mod-header.scss';
