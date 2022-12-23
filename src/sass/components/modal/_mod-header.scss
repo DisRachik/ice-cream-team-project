@@ -10,7 +10,6 @@
 .modal-header {
     z-index: 10;
     transition: opacity 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
-    
     overflow-y: scroll;
     opacity: 1;
     border: 2px solid #F8D24E;
@@ -34,32 +33,42 @@ border-radius: 10px;
     left: 50%;
    transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
-    height: 609px;
-   
-   min-width: 521px;
+    height: 644px;
+   min-width: 568px;
    max-width: 100%;
-    max-height: 100%;
-
-    background-color:#FCFCFC;
-  }
+max-height: 100%;
+background-color:#FCFCFC;
+}
 
 @media screen and (min-width: 1200px) {
     position: absolute;
-     top: 50%;
-     left: 50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%) scale(1);
-     transition: transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
- 
-    min-height: 581px;
-    min-width: 521px;
-    background-color:#FCFCFC;
-   
+    transition: transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+    height: 644px;
+    min-width: 568px;
+    background-color:#FCFCFC;  
     }
 }  
-
-
-
-
+.modal-batton.phons {
+    display: flex;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+.modal-batton.tablet {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+.modal__main {
+    @media screen and (min-width: 768px) {
+        padding-left: 54px;
+        padding-right: 54px;
+    }
+}
+  
 .modal-batton {
     display: flex;
     justify-content: center;
@@ -76,10 +85,7 @@ border-radius: 10px;
     margin-right: 8px;
     }
     @media screen and (min-width: 768px) {
-        margin-left: 490px;
-    }
-    @media screen and (min-width: 1200px) {
-        margin-left: 490px;
+        margin-left: 538px;
     }
 }
 .modal-svg {
@@ -93,10 +99,17 @@ border-radius: 10px;
        
 }
 // ---img---------------------------------------
+
+
 .modal__headerlist {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 768px) {
+       flex-direction: row;
+       justify-content: space-between;
+       margin-bottom: 40px;
+    }
 }
 .modal__iceli.green-li{
     width: 132px;
@@ -106,6 +119,7 @@ filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
 border-radius: 15px;
 padding: 96px 13px 20px 13px;
 position: relative;
+
 }
 .modal__iceli.yellow-li {
     width: 132px;
@@ -128,9 +142,15 @@ border-radius: 15px;
 }
 .modal__iceli:not(:last-child) {
     margin-bottom: 82px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0px;
+    }
 }
 .modal__iceli:last-child {
     margin-bottom: 31px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0px;
+    }
 }
 .modal__headerimg {
     position: absolute;
@@ -197,6 +217,9 @@ color: #131313;
     
     padding-left: 28px;
     padding-right: 28px;
+    @media screen and (min-width: 768px) {
+       align-items: center;
+    }
 }
 
 /* ---form-1 */
@@ -210,6 +233,11 @@ text-align: center;
 color: #131313;
 
 margin-bottom: 83px;
+@media screen and (min-width: 768px) {
+    margin-bottom: 103px;
+    font-size: 20px;
+line-height: calc(28/20);
+}
 }
 .form-imput {
 border: 1px solid #84A178;
@@ -232,6 +260,9 @@ color: #131313;
 @include animated(cursor);
 @media screen and (min-width: 0px) and (max-width: 767px) {
     width: 100%;
+}
+@media screen and (min-width: 768px) {
+    width: 368px;
 }
 }
 .form-imput::placeholder {
@@ -259,6 +290,10 @@ padding: 12px 16px;
 color: inherit;
 resize: none;
 margin-bottom: 26px;   
+@media screen and (min-width: 768px) {
+    width: 368px;
+    margin-bottom: 32px; 
+}
 }
 .form-first-text::placeholder {
     color: #131313;
@@ -268,6 +303,7 @@ font-weight: 400;
 font-size: 12px;
 line-height: 140%;
 }
+
 
 
 /* --butn-- */
@@ -288,6 +324,12 @@ text-align: center;
 color: #131313;
 
 @include animated(color, background-color);
+@media screen and (min-width: 768px) {
+    width: 121px;
+    font-weight: 600;
+font-size: 14px;
+line-height: calc(17/14);
+}
  }
 
 .form-button:hover, .form-button:focus {
