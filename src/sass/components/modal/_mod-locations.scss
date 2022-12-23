@@ -1,21 +1,3 @@
-.modal {
-    margin: auto;
-    padding-top: 28px;
-    padding-right: 28px;
-    padding-bottom: 28px;
-    padding-left: 28px;
-
-    min-width: 280px;
-
-    @media screen and(min-width: 768px) {
-        padding-top: 32px;
-        padding-right: 60px;
-        padding-bottom: 32px;
-        padding-left: 60px;
-        min-width: 568px;
-    }
-}
-
 .backdrop {
     position: fixed;
     top: 0;
@@ -38,6 +20,50 @@
 //     pointer-events: none;
 //     visibility: hidden;
 // }
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    min-width: 95%;
+
+    border: 2px solid #f8d24e;
+    background-color: #fcfcfc;
+    border-radius: 10px;
+    padding: 28px;
+
+    min-width: 280px;
+
+    @media screen and(min-width: 768px) {
+    width: 568px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+    padding-right: 60px;
+    padding-bottom: 32px;
+    padding-left: 60px;
+    }
+
+    // margin: auto;
+    // padding-top: 28px;
+    // padding-right: 28px;
+    // padding-bottom: 28px;
+    // padding-left: 28px;
+
+    // min-width: 280px;
+
+    // @media screen and(min-width: 768px) {
+    //     padding-top: 32px;
+    //     padding-right: 60px;
+    //     padding-bottom: 32px;
+    //     padding-left: 60px;
+    //     min-width: 568px;
+    // }
+}
 
 .modal__label {
     font-family: 'Seymour One',
@@ -63,6 +89,7 @@
     }
 }
     .modal__link {
+    margin-top: 24;   
     width: 134px;
     height: 42px;
      // margin-top: 24px;
@@ -95,39 +122,52 @@
     width: 145px;
     font-size: 14px;
     line-height: 1.21;
-        
+    margin-top: 32;
     }
     }
 
     .modal__btn {
     position: absolute;
+
     top: 8px;
     right: 8px;
 
     padding: 0;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
         
-    width: 13.33px;
-    height: 13.37px;
     border: none;
     background-color: transparent;
     cursor: pointer;
-          
-    
+              
     }
 
     .modal__icon {
         fill: #131313;
+        width: 20px;
+        height: 20px;
+        @media screen and(min-width: 768px) {
+        width: 24px;
+        height: 24px;
+        }
     }
 
     .modal__img {
-        align-items: center;
-        // justify-content: center;
         margin-bottom: 24;
 
         @media screen and(min-width: 768px) {
         margin-bottom: 32;
         }
+    }
+
+    .modal__iframe {
+    width: 224px;
+    height: 199px;
+
+    @media screen and(min-width: 768px) {
+    width: 448px;
+    height: 260px;
+    }
+    
     }
