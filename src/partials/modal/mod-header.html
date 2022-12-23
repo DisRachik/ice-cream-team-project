@@ -1,43 +1,35 @@
     <div class="modal-header is-hidden" data-modal>
 <button type="button" class="modal-batton" aria-label="modal-btna" data-modal-close><svg class="modal-svg" width="11px" height="11px">
-    <use href="./images/header/SVG/close-modal-btn.svg#icon-close-buttom"></use>
+    <use href="./images/header/SVG/header_svg#icon-product_card_close"></use>
 </svg></button> 
-
-<section class="section doing">
-    <div class="container">
-        <h4 class="doing__caption">Чим ми займаємося</h4>
-        <ul class="doing__list list">
-            <li class="doing__li">
-                <img srcset="./images/heade/prodact_card/kelsey-curtis.png 1x, ./images/header/prodact_card/kelsey-curtis@2x.png 2x"
-                src="./images/heade/prodact_card/kelsey-curtis.png" 
-                alt="coding" width="370" height="294">
-                <div class="sample__overley">
-                <p class="sample__works">Веб-сайт</p>
-            </div>
+<div class="modal__main">
+<p class="form-titel" id="contact-details-modal">Buy now</p>
+<div class="modal__ice ">
+        <ul class="modal__headerlist list">
+            <li class="modal__iceli green-li">
+                <img class="modal__headerimg" srcset="./images/header/prodact_card/kelsey-curtis.png 1x, ./images/header/prodact_card/kelsey-curtis@2x.png 2x"
+                src="./images/header/prodact_card/kelsey-curtis.png" 
+                alt="coding" width="132" height="132">
+                <p class="sample__works">ICE CREAM</p>
             </a></li>
-           
-            <li class="doing__li">
-                <img srcset="./images/header/prodact_card/pariwat-pannium.png 1x, ./images/header/prodact_card/pariwat-pannium@2x.png 2x"
-                src="./images/header/prodact_card/pariwat-pannium.png" alt="mobile_programms" width="370" height="294">
-                <div class="sample__overley">
-                    <p class="sample__text">ice coffee</p>
-                </div>
+            <li class="modal__iceli yellow-li">
+                <img class="modal__headerimg" srcset="./images/header/prodact_card/pariwat-pannium.png 1x, ./images/header/prodact_card/pariwat-pannium@2x.png 2x"
+                src="./images/header/prodact_card/pariwat-pannium.png" alt="mobile_programms" width="132" height="132">
+                    <p class="sample__works">ICE COFFEE</p>
             </a></li>
 
-            <li class="doing__li"><div class="doing__overlay">
-                <img srcset="./images/header/prodact_card/victor-rutka.png 1x, ./images/header/prodact_card/victor-rutka.png@2x.jpg 2x"
+            <li class="modal__iceli grey-li"><div class="doing__overlay">
+                <img class="modal__headerimg" srcset="./images/header/prodact_card/victor-rutka.png 1x, ./images/header/prodact_card/victor-rutka@2x.png 2x"
                 src="./images/header/prodact_card/victor-rutka.png" 
-                alt="designe" width="370" height="294">
-                <div class="sample__overley">
-                <p class="sample__works">milkshake</p>
-            </div>
+                alt="designe" width="132" height="132">
+                <p class="sample__works">MILKSHAKE</p>
             </a></li>
         </ul>
-</section>
+    </div>
 
     <form class="form-first js-speaker-form">
         <div class="form" role="group" aria-labelledby="contact-details-modal">
-        <p class="form-titel" id="contact-details-modal">Buy now</p>
+        
         </div>        
         <div class="form-first-one">
             <label class="form-first-mater" for="username"></label>
@@ -51,5 +43,6 @@
                 <textarea class="form-first-text" id="feedback" name="feedback" rows="3" placeholder="Comment"></textarea>
          <button class="form-button" type="submit">Submit</button>
     </form>
+</div>
 </div>
 
