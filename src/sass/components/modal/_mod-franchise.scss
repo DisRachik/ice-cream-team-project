@@ -1,47 +1,48 @@
 .backdrop {
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-    transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 
-    min-width: 95%;
+  min-width: 95%;
 
-    min-width: 280px;
-    height: 674px;
+  min-width: 280px;
+  height: 674px;
 
-    background: #fcfcfc;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border: 2px solid #f8d24e;
-    border-radius: 10px;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
 
-    transition: opacity 800ms 500ms ease;
+  transition: opacity 800ms 500ms ease;
 
-    @include media('phone') {
-        padding: 28px;
-        }
+  @include media('phone') {
+    padding: 28px;
+  }
 
-    @include media('tablet') {
-        width: 568px;
-        height: 668px;
-        padding-left: 58px;
-        padding-right: 58px;
-    }
+  @include media('tablet') {
+    width: 568px;
+    height: 668px;
+    padding-left: 58px;
+    padding-right: 58px;
+  }
 
-    &__btn {
+  &__btn {
     position: absolute;
     top: 12px;
     right: 12px;
@@ -58,209 +59,206 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @include media('tablet') {
-        width: 24px;
-        height: 24px;
+      width: 24px;
+      height: 24px;
     }
-
-    }
-
+  }
 }
 
 .franchise__title {
-    display: block;
-    margin-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 
-    max-width: 322px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 322px;
+  margin-left: auto;
+  margin-right: auto;
 
-    font-family: 'Seymour One',
-    sans-serif;
+  font-family: 'Seymour One', sans-serif;
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    color: #131313;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #131313;
 
-    @include media('tablet') {
-        font-size: 20px;
-        line-height: 1.4;
-    }
+  @include media('tablet') {
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
 
 .franchise__text {
-    // @extend %text;
-    display: block;
-    margin-bottom: 24px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.4;
-    color: #131313;
+  // @extend %text;
+  display: block;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #131313;
 
-    @include media('tablet') {
-        margin-bottom: 32px;
-        font-size: 16px;
-        line-height: 1.4;
-    }
+  @include media('tablet') {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
 }
 
 .franchise_form {
-    @include media('tablet') {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
+  @include media('tablet') {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .franchise__wrap {
-    position: relative;
-    margin-bottom: 12px;
+  position: relative;
+  margin-bottom: 12px;
 
-    @include media('tablet') {
-        margin-bottom: 16px;
-    }
+  @include media('tablet') {
+    margin-bottom: 16px;
+  }
 }
 
 .franchise__textarea {
-    position: relative;
-    margin-bottom: 24px;
-    height: 64px;
+  position: relative;
+  margin-bottom: 24px;
+  height: 64px;
 
-    @include media('tablet') {
-        margin-bottom: 32px;
-        height: 84px;
-    }
+  @include media('tablet') {
+    margin-bottom: 32px;
+    height: 84px;
+  }
 }
 
 .franchise__label {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-    transition: transform 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: transform 0.5s;
 
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.4;
-    color: #131313;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #131313;
 
-    @include media('tablet') {
-        font-size: 14px;
-        left: 16px;
-    }
+  @include media('tablet') {
+    font-size: 14px;
+    left: 16px;
+  }
 }
 
 .franchise__textarea .comments {
-    top: 17px;
-    left: 12px;
+  top: 17px;
+  left: 12px;
 
-    @include media('tablet') {
-        top: 20px;
-        left: 16px;
-    }
+  @include media('tablet') {
+    top: 20px;
+    left: 16px;
+  }
 }
 
 .franchise__field,
 .franchise__comment {
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 8px;
-    padding-bottom: 7px;
-    width: 100%;
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84a178;
-    border-radius: 10px;
-    outline: none;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  width: 100%;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @include media('tablet') {
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-top: 11px;
-        padding-bottom: 11px;
-    }
+  @include media('tablet') {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
 }
 
 .franchise__comment {
-    resize: none;
+  resize: none;
 }
 
 .franchise__field:focus,
 .franchise__comment:focus {
-    border: 1px solid #0a8817;
+  border: 1px solid #0a8817;
 }
 
-.franchise__field:focus+.franchise__label,
-.franchise__field:not(:placeholder-shown)+.franchise__label {
-    transform: translateY(-30px);
-    transition: transform 0.4s linear;
+.franchise__field:focus + .franchise__label,
+.franchise__field:not(:placeholder-shown) + .franchise__label {
+  transform: translateY(-30px);
+  transition: transform 0.4s linear;
 
-    font-size: 10px;
+  font-size: 10px;
 
-    @include media('tablet') {
-        transform: translateY(-37px);
+  @include media('tablet') {
+    transform: translateY(-37px);
 
-        font-size: 12px;
-    }
+    font-size: 12px;
+  }
 }
 
-.franchise__comment:focus+.franchise__label,
-.franchise__comment:not(:placeholder-shown)+.franchise__label {
-    transform: translateY(-30px);
-    transition: transform 0.4s linear;
+.franchise__comment:focus + .franchise__label,
+.franchise__comment:not(:placeholder-shown) + .franchise__label {
+  transform: translateY(-30px);
+  transition: transform 0.4s linear;
 
-    font-size: 10px;
+  font-size: 10px;
 
-    @include media('tablet') {
-        transform: translateY(-36px);
+  @include media('tablet') {
+    transform: translateY(-36px);
 
-        font-size: 12px;
-    }
+    font-size: 12px;
+  }
 }
 
 .franchise__btn {
-    // position: absolute;
-    // top: 8px;
-    // right: 8px;
+  // position: absolute;
+  // top: 8px;
+  // right: 8px;
 
-    // padding: 0;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // border: none;
-    // background-color: transparent;
-    // cursor: pointer;
+  // padding: 0;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // border: none;
+  // background-color: transparent;
+  // cursor: pointer;
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 42px;
-    
-    padding: 12px 34px;
-    
-    text-align: center;
-    
-    border: none;
-    border-radius: 10px;
-    color: #131313;
-    background-color: #f8d24e;
-           
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
 
-    min-width: 114px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-top: 12px;
-    background-color: #F8D24E;
-    border-radius: 10px;
+  padding: 12px 34px;
 
-    cursor: pointer;
-    @include media('tablet') {
+  text-align: center;
+
+  border: none;
+  border-radius: 10px;
+  color: #131313;
+  background-color: #f8d24e;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  min-width: 114px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-top: 12px;
+  background-color: #f8d24e;
+  border-radius: 10px;
+
+  cursor: pointer;
+  @include media('tablet') {
     min-width: 121px;
-    }
+  }
 }
