@@ -45,7 +45,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 1.5;
     
     display: block;
     align-items: center;
@@ -54,6 +54,80 @@
     color: #131313;
 
     margin-bottom: 20px;
-    margin-top: 0ch;
+    // margin-top: 0ch;
 
+    @media screen and(min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+    }
 }
+    .modal__link {
+    width: 134px;
+    height: 42px;
+     // margin-top: 24px;
+        
+    background-color: #f8d24e;
+    border: none;
+    color: rgba(19, 19, 19, 100%);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+        
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+        
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+        
+    @media screen and(min-width: 768px) {
+    width: 145px;
+    font-size: 14px;
+    line-height: 1.21;
+        
+    }
+    }
+
+    .modal__btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+        
+    width: 13.33px;
+    height: 13.37px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+          
+    
+    }
+
+    .modal__icon {
+        fill: #131313;
+    }
+
+    .modal__img {
+        align-items: center;
+        // justify-content: center;
+        margin-bottom: 24;
+
+        @media screen and(min-width: 768px) {
+        margin-bottom: 32;
+        }
+    }
