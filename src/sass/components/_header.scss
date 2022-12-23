@@ -1,27 +1,5 @@
-@mixin pseudo($display: block, $pos: absolute, $content: ''){
-    content: $content;
-    // display: $display;
-    position: $pos;
-  }
-  
-  // breakpoints
-  @mixin respond-to($breakpoint) {
-    // If the key exists in the map
-    @if map-has-key($breakpoints, $breakpoint) {
-      // Prints a media query based on the value
-      @media #{inspect(map-get($breakpoints, $breakpoint))} {
-        @content;
-      }
-    }
-    // If the key doesn't exist in the map
-    @else {
-      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-          + "Available breakpoints are: #{map-keys($breakpoints)}.";
-    }
-  }
 
-
-.header {
+ .header {
 position: relative;
  width: 100%;
 
@@ -40,8 +18,7 @@ background-color: #84A178;
 .header__nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-         
+    align-items: center;        
 }
 .header__flex {
     @media screen and (min-width: 768px) {               
@@ -57,6 +34,9 @@ background-color: #84A178;
     @media screen and (min-width: 768px) {
         width: 48px;
         z-index: 3;  
+    }
+    &:hover, &:focus {
+        cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' fill='none'%3E%3Cpath stroke='%23131313' stroke-width='2' d='m18.047 14.012 10.934 10.205c1.871 1.746.837 4.883-1.706 5.174l-4.118.47a5 5 0 0 0-2.777 1.251l-2.373 2.136c-1.93 1.738-5.007.368-5.007-2.23V16.206c0-2.623 3.13-3.983 5.047-2.193Z'/%3E%3C/svg%3E") 12 12, pointer;
     }
 }    
 // btn
@@ -90,11 +70,13 @@ display: block;
 }   
     &:hover {
         background-color: getColor('link-hover');
-        cursor: pointer;
+        cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' fill='none'%3E%3Cpath stroke='%23131313' stroke-width='2' d='m18.047 14.012 10.934 10.205c1.871 1.746.837 4.883-1.706 5.174l-4.118.47a5 5 0 0 0-2.777 1.251l-2.373 2.136c-1.93 1.738-5.007.368-5.007-2.23V16.206c0-2.623 3.13-3.983 5.047-2.193Z'/%3E%3C/svg%3E") 12 12, pointer;
+
     }
     &:focus {
         color: #FFFFFF;
-        cursor: pointer;
+        cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' fill='none'%3E%3Cpath stroke='%23131313' stroke-width='2' d='m18.047 14.012 10.934 10.205c1.871 1.746.837 4.883-1.706 5.174l-4.118.47a5 5 0 0 0-2.777 1.251l-2.373 2.136c-1.93 1.738-5.007.368-5.007-2.23V16.206c0-2.623 3.13-3.983 5.047-2.193Z'/%3E%3C/svg%3E") 12 12, pointer;
+
         background-color: getColor('link-hover');
         
     }
@@ -168,6 +150,8 @@ color: getColor('primary-text');
     transform: scale(1.2);
     @media screen and (min-width: 1200px) {
     color: getColor('link-default');
+    
+    cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' fill='none'%3E%3Cpath stroke='%23131313' stroke-width='2' d='m18.047 14.012 10.934 10.205c1.871 1.746.837 4.883-1.706 5.174l-4.118.47a5 5 0 0 0-2.777 1.251l-2.373 2.136c-1.93 1.738-5.007.368-5.007-2.23V16.206c0-2.623 3.13-3.983 5.047-2.193Z'/%3E%3C/svg%3E") 12 12, pointer;
 }}
 }
 
@@ -179,7 +163,8 @@ color: getColor('primary-text');
 
 .menu__svg {&:hover, &:focus {
     fill: getColor('link-focus');
-    cursor: pointer;
+    cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' fill='none'%3E%3Cpath stroke='%23131313' stroke-width='2' d='m18.047 14.012 10.934 10.205c1.871 1.746.837 4.883-1.706 5.174l-4.118.47a5 5 0 0 0-2.777 1.251l-2.373 2.136c-1.93 1.738-5.007.368-5.007-2.23V16.206c0-2.623 3.13-3.983 5.047-2.193Z'/%3E%3C/svg%3E") 12 12, pointer;
+
 }}
 
 .header__menu {
