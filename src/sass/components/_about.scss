@@ -39,7 +39,7 @@
 }
 
 .about__title {
-  min-width: 320px;
+  width: 200px;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 32px;
@@ -55,6 +55,7 @@
   color: #fcfcfc;
 
   @media screen and (min-width: 768px) {
+    width: 100%;
     margin-bottom: 72px;
 
     font-size: 34px;
