@@ -164,13 +164,15 @@
 }
 
 .footer__line {
-  margin-top: 0;
-  margin-bottom: 12px;
-  border: 1px solid #e1e1e1;
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 20px;
-  }
+    margin-top: 0;
+    margin-bottom: 12px;
+    border: 1px solid #E1E1E1;
+    
+    @media screen and (max-width: 767px) {
+       margin-bottom: 20px;
+       margin-left: -20px;
+       margin-right: -20px;    
+    }
 }
 
 .footer__copyright {
