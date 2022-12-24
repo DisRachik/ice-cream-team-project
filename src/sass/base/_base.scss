@@ -4,8 +4,44 @@ body {
   // font-family: 'Seymour One', sans-serif;
 
   scroll-behavior: smooth;
-  
-  
+
+  // background-image
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  //mobile
+  @include media('phone', max) {
+    background-image: url(./../images/backgroud__image/backgroud_mobile1x.png);
+    background-size: 320px 449px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(./../images/backgroud__image/backgroud_mobile2x.png);
+    }
+  }
+  //tablet
+  @include min-max('phone', 'desktop') {
+    background-image: url(./../images/backgroud__image/background_tablet1x.png);
+    background-size: 720px 728px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(./../images/backgroud__image/background_tablet2x.png);
+    }
+  }
+  //Desktop
+  @include media('desktop') {
+    background-image: url(./../images/backgroud__image/backgroud_desktop1x.png);
+    background-size: 1200px 1248px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(./../images/backgroud__image/backgroud_desktop2x.png);
+    }
+  }
 }
 
 // Контейнер
@@ -27,34 +63,6 @@ body {
     padding-left: 16px;
     max-width: 1200px;
   }
-
-   //Desktop
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../../images/backgroud__Image/Backgroud_desktop1x.png);
-  }
-  //mobile
-  @media screen and (min-width: 481px) {
-    background-image: url(../../images/backgroud__Image/Backgroud_mobile1x.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../../images/backgroud__Image/Backgroud_mobile2x.png);
-    }
-  }
-   //tablet
-  @media screen and (min-width: 769px) {
-    background-image: url(../../images/backgroud__Image/Background_tablet1x.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../../images/backgroud__Image/Background_tablet2x.png);
-    }
-  }
-
 }
 
 // Загальний клас для скритих блоків
