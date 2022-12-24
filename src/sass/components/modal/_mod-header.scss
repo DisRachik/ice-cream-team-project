@@ -265,7 +265,14 @@ color: #131313;
     width: 368px;
 }
 }
-.form-imput::placeholder {
+.form-imput:invalid {
+    border: 1px solid red;
+  }
+.form-first-text:invalid {
+    border: 1px solid red;
+  }
+
+ .form-imput::placeholder {
     color: #131313;
 }
 /* --hover-- */

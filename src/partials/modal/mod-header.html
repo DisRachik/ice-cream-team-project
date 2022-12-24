@@ -32,15 +32,16 @@
         </div>        
         <div class="form-first-one">
             <label class="form-first-mater" for="username"></label>
-            <input class="form-imput" placeholder="Name" type="text" name="username" id="username"> 
+            <input class="form-imput" placeholder="Name" type="text" name="username" id="username" pattern = "[a-z]{2,12}" title="2 to 12 lowercase letters" /> 
         </div>  
             <div class="form-second form-first-one">
                 <label class="form-first-mater" for="telephone"></label>
-              <input class="form-imput" placeholder="Phone" type="tel" name="telephone" id="telephone">           
+              <input class="form-imput" placeholder="Phone" type="tel" name="telephone" id="telephone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please enter valid phone number Ex:0554816385">           
             </div>
             <label class="form-first-mater" for="feedback"></label>
-                <textarea class="form-first-text" id="feedback" name="feedback" rows="3" placeholder="Comment"></textarea>
+                <textarea class="form-first-text" id="feedback" name="feedback" rows="3" placeholder="Comment" minlength="10" maxlength="140" title="The text must be at least 10 characters"></textarea>
          <button class="form-button" type="submit">Submit</button>
     </form>
 </div>
 </div>
+ required

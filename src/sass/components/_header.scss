@@ -157,7 +157,7 @@ color: getColor('link-default');
 @include animated(color, transform);
 
 &:hover{
-        color: #131313;  
+    color: #0A8817;
     transform: scale(1.2);
     @media screen and (min-width: 1200px) {
     color: #0A8817;
