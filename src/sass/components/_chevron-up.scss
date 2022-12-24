@@ -1,0 +1,23 @@
+.scroll-up {
+  position: fixed;
+  right: 5%;
+  bottom: 2.5%;
+  z-index: 1000;
+
+  display: block;
+
+  color: #ee508f;
+  border-radius: 50%;
+
+  @include animated(transform, box-shadow);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 20px #c70101;
+    border: none;
+  }
+}
+.scroll-up__icon {
+  fill: currentColor;
+}
