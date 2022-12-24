@@ -17,12 +17,11 @@ img {
 a {
   text-decoration: none;
   color: currentColor;
-  // &:hover,
-  // &:focus,
-  // &:visited {
-  //   color: currentColor;
-  //   text-decoration: none;
-  // }
+  &:hover,
+  &:focus,
+  &:visited {
+    text-decoration: none;
+  }
 }
 ul {
   padding-left: 0;
