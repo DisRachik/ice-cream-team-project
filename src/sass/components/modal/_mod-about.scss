@@ -1,4 +1,5 @@
 .mod-about {
+  position: relative;
   width: 280px;
   height: 459px;
   padding: 28px;
@@ -21,7 +22,6 @@
   padding: 5px;
   top: 12px;
   right: 12px;
-  background: #131313;
   cursor: pointer;
 }
 
@@ -33,6 +33,7 @@
   display: block;
   margin-bottom: 20px;
 
+  font-family: 'Seymour One', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -44,6 +45,17 @@
   @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: 1.4;
+  }
+}
+
+.mod-about__iframe {
+  width: 224px;
+  height: 199px;
+  border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 205px;
   }
 }
 
