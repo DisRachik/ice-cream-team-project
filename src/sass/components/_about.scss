@@ -39,6 +39,7 @@
 }
 
 .about__title {
+  min-width: 320px;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 32px;
@@ -66,6 +67,22 @@
 
     font-size: 36px;
     line-height: 1.25;
+  }
+
+  &:hover {
+    color: #0a8817;
+    text-decoration-line: underline;
+   
+  }
+
+  &:focus {
+    color: #fcfcfc;
+    text-decoration-line: underline;
+  }
+
+  &:disabled {
+    color:  #ABABAB;
+    text-decoration-line: underline;
   }
 }
 
@@ -194,8 +211,6 @@
 }
 
 .about__desc-one {
-  // padding-right: 50px;
-  // padding-left: 50px;
   margin-bottom: 4px;
   margin-top: 40px;
 
@@ -219,8 +234,6 @@
 }
 
 .about__desc-two {
-  // padding-right: 50px;
-  // padding-left: 50px;
   margin-bottom: 4px;
 
   font-weight: 400;
@@ -245,8 +258,6 @@
 }
 
 .about__desc-three {
-  // padding-right: 50px;
-  // padding-left: 50px;
   margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.94;
@@ -293,6 +304,14 @@
 
   color: #000000;
   background-color: #f8d24e;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+  }
 
   &:hover {
     background-color: #0a8817;
