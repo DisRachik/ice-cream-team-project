@@ -173,6 +173,8 @@ color: getColor('link-default');
 color: #ABABAB;
 }
 .menu__svg  {
+    width: 32px;
+    height: 32px;
     margin-left: auto;
     fill: getColor('link-focus');
     @include animated(fill, transform);
@@ -194,7 +196,7 @@ color: #ABABAB;
     @media screen and (min-width: 1199px) {
     display: none;  }
     @media screen and (min-width: 768px) {               
-        margin-left: 432px;
+        margin-left: 424px;
     }      
 }
 .mobile__menu.is-open ~ .header__menu {
