@@ -1,9 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   // Для використання другого шрифту пишемо -
   // font-family: 'Seymour One', sans-serif;
-
-  scroll-behavior: smooth;
 
   // background-image
   background-repeat: repeat;
@@ -50,6 +51,8 @@ body {
   padding-right: 20px;
   padding-left: 20px;
   max-width: 480px;
+
+  overflow: hidden;
 
   @include media('tablet') {
     padding-right: 32px;

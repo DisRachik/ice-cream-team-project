@@ -1,7 +1,5 @@
-
-
-
-
+// Rostyslav and Tetiana Nivchyk - Reviews
+import './js/reviews';
 
 // Tetiana Ustumenko franchise-modal
 import './js/mod-franchise';
@@ -13,3 +11,6 @@ import './js/header/header-js';
 import './js/header/header_mobile_menu';
 import './js/header/header_modal';
 import './js/header/header_burg_btn2';
+
+// Tetiana Pesotska - mod-about
+import './js/mod-about';
