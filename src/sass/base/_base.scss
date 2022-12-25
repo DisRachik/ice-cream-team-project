@@ -4,6 +4,43 @@ body {
   // font-family: 'Seymour One', sans-serif;
 
   scroll-behavior: smooth;
+
+  // background-image
+  background-repeat: repeat;
+  background-attachment: fixed;
+  //mobile
+  @include media('phone', max) {
+    background-image: url(./../images/backgroud_image/backgroud_m@1x.png);
+    background-size: 320px 449px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(./../images/backgroud_image/backgroud_m@2x.png);
+    }
+  }
+  //tablet
+  @include min-max('phone', 'desktop') {
+    background-image: url(./../images/backgroud_image/background_t@1x.png);
+    background-size: 720px 728px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(./../images/backgroud_image/background_t@2x.png);
+    }
+  }
+  //Desktop
+  @include media('desktop') {
+    background-image: url(./../images/backgroud_image/backgroud_d@1x.png);
+    background-size: 1200px 1248px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(./../images/backgroud_image/backgroud_d@2x.png);
+    }
+  }
 }
 
 // Контейнер

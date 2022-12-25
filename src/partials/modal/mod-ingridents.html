@@ -1,0 +1,81 @@
+<div class="backdrop ingridents-modal-is-hidden" data-ingridents-modal>
+  <div class="ingridents-modal">
+    <button class="ingridents-modal__btn" data-ingridents-modal-close>
+      <svg class="ingridents-modal__icon">
+        <use
+          href="./images/icons/modal-franchise.svg#icon-clarity_close-line"
+        ></use>
+      </svg>
+    </button>
+
+    <strong class="ingridents__title">Chololate icecream</strong>
+    <div class="ingridents__thumb ingridents__thumb--green"></div>
+
+    <ul class="ingredients-modal__list-nutrients">
+      <li class="ingredients-modal__item-nutrients">
+        <span class="ingredients-modal__weight">320</span>kcal
+      </li>
+      <li class="ingredients-modal__item-nutrients">
+        <span class="ingredients-modal__weight">4g</span>Prote...
+      </li>
+      <li class="ingredients-modal__item-nutrients">
+        <span class="ingredients-modal__weight">8.2g</span>Fats
+      </li>
+      <li class="ingredients-modal__item-nutrients">
+        <span class="ingredients-modal__weight">40.4g</span>Carbs
+      </li>
+    </ul>
+
+    <p class="ingridents__text">Ingredients</p>
+    <div class="ingridents__list">
+      <ul>
+        <li class="ingridents__items">Milk</li>
+        <li class="ingridents__items">Belgian chocolate</li>
+        <li class="ingridents__items">Cream</li>
+        <li class="ingridents__items">Cocoa powder</li>
+        <li class="ingridents__items">Sugar</li>
+        <li class="ingridents__items">Vanilla sugar</li>
+      </ul>
+      <ul>
+        <li class="ingridents__items ingridents__items-text">100ml</li>
+        <li class="ingridents__items ingridents__items-text">20g</li>
+        <li class="ingridents__items ingridents__items-text">150 ml</li>
+        <li class="ingridents__items ingridents__items-text">30g</li>
+        <li class="ingridents__items ingridents__items-text">40g</li>
+        <li class="ingridents__items ingridents__items-text">10g</li>
+      </ul>
+    </div>
+    <div class="ingridents__wrapper">
+      <form name="ingredients-form" class="ingredients-form">
+        <label class="ingredients-form__field">
+          <input
+            type="text"
+            name="user-name-ingredients"
+            placeholder="Name"
+            class="ingredients-form__input"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Username must be two words separated by space."
+          />
+        </label>
+        <label class="ingredients-form__field">
+          <input
+            type="tel"
+            name="phone_number-ingredients"
+            placeholder="Phone"
+            class="ingredients-form__input"
+            autocomplete="off"
+            pattern="^[ 0-9]+$"
+          />
+        </label>
+        <label class="ingredients-form__field ingredients-form__field--mb">
+          <textarea
+            name="comment-ingredients"
+            placeholder="Comment"
+            class="ingredients-form__comment"
+          ></textarea>
+        </label>
+        <button type="submit" class="ingredients-form__btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

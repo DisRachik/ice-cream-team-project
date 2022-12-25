@@ -1,0 +1,110 @@
+<!-- hero -->
+<section class="hero">
+  <div class="container hero__box">
+    <div class="hero__wrap">
+      <div class="hero-wrap__title">
+        <h1 class="hero__title">
+          ice cream made with
+          <span class="hero__title--font">passion</span>
+        </h1>
+      </div>
+      <div class="hero-wrap__content">
+        <ul class="hero__inner-list">
+          <li class="hero__inner-item">
+            <p class="hero__inner-text">
+              16
+              <span class="hero__inner-label">cafes</span>
+            </p>
+          </li>
+          <li class="hero__inner-item">
+            <p class="hero__inner-text">
+              23
+              <span class="hero__inner-label">food trucks</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="hero__list">
+      <li class="hero__item">
+        <a class="hero__anchor" href="#products">Products</a>
+      </li>
+      <li class="hero__item">
+        <a class="hero__anchor--next" href="#about">How it’s made?</a>
+      </li>
+    </ul>
+    <picture class="hero__picture">
+      <!-- Desktop screen -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero/desktop-1_1x.png 1x,
+          ./images/hero/desktop-1_2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/tabletice-1_1x.png 1x,
+          ./images/hero/tabletice-1_2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Mobile screen -->
+      <source
+        media="(max-width: 767.98px)"
+        srcset="
+          ./images/hero/desktop-1_1x.png 1x,
+          ./images/hero/desktop-1_2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        src="./images/hero/desktop-1_1x.png"
+        alt="ice"
+        width="456"
+        height="560"
+        loading="lazy"
+      />
+    </picture>
+    <picture class="hero__snowball">
+      <!-- Desktop screen -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero/desktop-2_1x.png 1x,
+          ./images/hero/desktop-2_2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/tabletice-2_1x.png 1x,
+          ./images/hero/tabletice-2_2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        src="./images/hero/desktop-2_1x.png"
+        alt="ice"
+        width="225"
+        height="225"
+        loading="lazy"
+      />
+    </picture>
+    <div class="hero-wrap__text">
+      <p class="hero__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <svg class="hero__icon" width="40" height="16">
+        <use href="./images/hero/hero-icons.svg#hero-icons"></use>
+      </svg>
+    </div>
+  </div>
+</section>
+<!-- hero -->
