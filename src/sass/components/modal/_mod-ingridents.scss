@@ -60,8 +60,7 @@
   top: 12px;
   right: 12px;
   color: getColor('secondary-text');
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 19 24'%3E%3Cpath stroke='%23131313' stroke-width='2' d='m6.047 2.012 10.934 10.205c1.871 1.746.837 4.883-1.706 5.174l-4.118.47a5 5 0 0 0-2.777 1.251l-2.373 2.136C4.077 22.986 1 21.616 1 19.018V4.206C1 1.582 4.13.222 6.047 2.012Z'/%3E%3C/svg%3E"),
-    pointer;
+
   @include animated(color);
 
   &:hover {
@@ -352,8 +351,6 @@
   background: getColor('tretiary-text');
   border-radius: 10px;
   border-style: none;
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 19 24'%3E%3Cpath stroke='%23131313' stroke-width='2' d='m6.047 2.012 10.934 10.205c1.871 1.746.837 4.883-1.706 5.174l-4.118.47a5 5 0 0 0-2.777 1.251l-2.373 2.136C4.077 22.986 1 21.616 1 19.018V4.206C1 1.582 4.13.222 6.047 2.012Z'/%3E%3C/svg%3E"),
-    pointer;
 
   @include animated(background-color, color);
 

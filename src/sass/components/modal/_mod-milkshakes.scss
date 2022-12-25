@@ -1,0 +1,365 @@
+.backdrop-milkshakes {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+
+  background-color: rgba(74, 92, 67, 0.3);
+
+  opacity: 1;
+
+  @include animated(opacity);
+}
+
+.milkshakes-modal-is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.milkshakes-modal {
+  visibility: visible;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(0deg);
+
+  padding: 28px 20px;
+
+  width: calc(100vw * 0.875);
+  height: calc(100vh * 0.95);
+
+  background-color: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  @include animated(transform, scale, rotate, visibility);
+
+  .milkshakes-modal-is-hidden & {
+    transform: translate(-50%, -50%) scale(1.5) rotate(-90deg);
+  }
+
+  @include media('tablet') {
+    padding: 32px 40px;
+  }
+
+  @media screen and (min-width: calc(568px / 0.85)) {
+    width: 568px;
+    overflow-y: auto;
+  }
+
+  @media screen and (max-width: 1199px) {
+    // max-height: 100%;
+    overflow-y: auto;
+  }
+}
+
+.milkshakes-modal__btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: getColor('secondary-text');
+
+  @include animated(color);
+
+  &:hover {
+    color: getColor('link-hover');
+  }
+
+  &:focus {
+    color: #0a8817;
+  }
+}
+
+.milkshakes-modal__icon {
+  width: 20px;
+  height: 20px;
+
+  fill: currentColor;
+
+  @include media('tablet') {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.milkshakes__title {
+  display: block;
+
+  margin-bottom: 31px;
+  margin-top: 20px;
+
+  max-width: 143px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: 'Seymour One', sans-serif;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #131313;
+  @include media('tablet') {
+    max-width: 273px;
+  }
+}
+.milkshakes__thumb {
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+
+  transform: translate(0%, 0%);
+
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+
+  &--brown {
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+  }
+}
+.milkshakes__thumb--brown::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -11px;
+
+  background-image: url(../images/mod-milkshakes/mod-milkshakes-1x.png);
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mod-milkshakes/mod-milkshakes-2x.png);
+  }
+}
+
+.milkshakes-modal__list-nutrients {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 40px;
+  @include media('tablet') {
+    gap: 20px;
+    margin-bottom: 48px;
+  }
+}
+.milkshakes-modal__item-nutrients {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  padding: 8px 0;
+  flex-basis: calc((240px - 27px) / 4);
+  border: 2px solid #d6936d;
+  border-radius: 40px;
+  font-size: 10px;
+  line-height: 1.2;
+  text-align: center;
+  color: getColor('secondary-text');
+  @include media('tablet') {
+    gap: 19px;
+    flex-basis: calc((320px - 60px) / 4);
+    padding-top: 11px;
+    padding-bottom: 14px;
+    font-size: 12px;
+    line-height: 1, 25;
+  }
+}
+.milkshakes-modal__item-nutrients::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: #d6936d;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+  z-index: -1;
+  @include media('tablet') {
+    width: 53px;
+    height: 53px;
+  }
+}
+.milkshakes-modal__weight {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 2.8;
+  text-align: center;
+  color: getColor('secondary-text');
+  @include media('tablet') {
+    font-size: 12px;
+    line-height: 2, 33;
+  }
+}
+.milkshakes-modal__text {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: getColor('secondary-text');
+}
+
+.milkshakes__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+
+  margin-bottom: 24px;
+  align-items: center;
+  text-align: center;
+
+  color: #131313;
+}
+.milkshakes__list {
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  @include media('tablet') {
+    margin-bottom: 48px;
+  }
+}
+.milkshakes__items {
+  font-size: 14px;
+  line-height: calc(25 / 14);
+  letter-spacing: 0.04em;
+  color: #131313;
+}
+
+.milkshakes__items-text {
+  display: flex;
+  justify-content: end;
+}
+
+.milkshakes__wrapper {
+  @include media('tablet') {
+    width: 368px;
+    margin: auto;
+  }
+}
+.milkshakes-form {
+  @media screen and (min-width: calc(568px / 0.85)) {
+    margin: 0 auto;
+    width: 368px;
+  }
+}
+
+.milkshakes-form__field {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.milkshakes-form__input {
+  padding: 11px 11px;
+
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.4;
+
+  color: getColor('secondary-text');
+  background-color: rgba(248, 210, 78, 0.1);
+
+  border: 1px solid #d6936d;
+  border-radius: 10px;
+
+  @include animated(border-color, box-shadow);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 0px 5px rgba(148, 82, 28, 0.5);
+    border-color: #bd632f;
+  }
+}
+
+.milkshakes-form__input::placeholder {
+  color: getColor('secondary-text');
+}
+
+.milkshakes-form__field--mb {
+  margin-bottom: 24px;
+
+  @include media('tablet') {
+    margin-bottom: 32px;
+  }
+}
+
+.milkshakes-form__comment {
+  display: block;
+  padding: 11px;
+
+  width: 100%;
+  height: 84px;
+
+  font-size: 14px;
+  line-height: 1.4;
+
+  resize: none;
+
+  color: getColor('secondary-text');
+  background-color: rgba(248, 210, 78, 0.1);
+
+  border: 1px solid #d6936d;
+  border-radius: 10px;
+
+  @include animated(border-color, box-shadow);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 0px 5px rgba(148, 82, 28, 0.5);
+    border-color: #bd632f;
+  }
+
+  @media screen and (min-width: calc(568px / 0.85)) {
+    width: 368px;
+  }
+}
+
+.milkshakes-form__comment::placeholder {
+  color: getColor('secondary-text');
+}
+
+.milkshakes-form__btn {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 34px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  text-align: center;
+
+  color: getColor('secondary-text');
+
+  background: getColor('tretiary-text');
+  border-radius: 10px;
+  border-style: none;
+
+  @include animated(background-color, color);
+
+  &:hover,
+  &:focus {
+    background-color: #0a8817;
+  }
+
+  &:focus {
+    color: #ffffff;
+  }
+}
