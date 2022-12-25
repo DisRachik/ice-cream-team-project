@@ -1,9 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   // Для використання другого шрифту пишемо -
   // font-family: 'Seymour One', sans-serif;
-
-  scroll-behavior: smooth;
 
   // background-image
   background-repeat: repeat;
