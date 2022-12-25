@@ -14,3 +14,6 @@ import './js/header/header_burg_btn2';
 
 // Tetiana Pesotska - mod-about
 import './js/mod-about';
+
+// Radchenko Ivan - Modal ingridients
+import './js/ingredients-modal';
