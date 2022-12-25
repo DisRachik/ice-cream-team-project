@@ -157,7 +157,7 @@ color: getColor('link-default');
 @include animated(color, transform);
 
 &:hover{
-        color: #131313;  
+    color: #0A8817;
     transform: scale(1.2);
     @media screen and (min-width: 1200px) {
     color: #0A8817;
@@ -173,6 +173,8 @@ color: getColor('link-default');
 color: #ABABAB;
 }
 .menu__svg  {
+    width: 32px;
+    height: 32px;
     margin-left: auto;
     fill: getColor('link-focus');
     @include animated(fill, transform);
@@ -194,7 +196,7 @@ color: #ABABAB;
     @media screen and (min-width: 1199px) {
     display: none;  }
     @media screen and (min-width: 768px) {               
-        margin-left: 432px;
+        margin-left: 424px;
     }      
 }
 .mobile__menu.is-open ~ .header__menu {
@@ -232,7 +234,8 @@ background: getColor('main-bg');
 position: absolute;
 top:-100%;
 left: 0;
-width: 100%;  
+width: 100vw;  
+height: 100vh;
 transition: opacity 250ms cubic-bezier(0.1, -0.6, 0.2, 0), visibility 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
 transition: transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
 transform: translate(-1000px,0); 

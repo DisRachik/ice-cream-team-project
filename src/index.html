@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,10 +18,48 @@
       name="description"
       content="A team project during training - the website of an ice cream company was created."
     />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="./images/backgroud_image/background_t@1x.png"
+    />
+    <meta property="og:title" content="ICE Cream" />
+    <meta
+      property="og:description"
+      content="A team project during training - the website of an ice cream company was created."
+    />
+    <meta
+      property="og:image"
+      content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+    />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="./images/backgroud_image/background_t@1x.png"
+    />
+    <meta property="twitter:title" content="ICE Cream" />
+    <meta
+      property="twitter:description"
+      content="A team project during training - the website of an ice cream company was created."
+    />
+    <meta
+      property="twitter:image"
+      content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+    />
 
     <!-- Title page -->
     <title>ICE Cream</title>
+    <!-- Style -->
     <link rel="stylesheet" href="./sass/index.scss" />
+    <!-- Scrips -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="module" src="./index.js"></script>
   </head>
 
@@ -32,6 +70,9 @@
 
     <!-- Mykola Tarabukin - Header-->
     <include src="./partials/header.html"></include>
+
+    <!-- Скрол до верху -->
+    <include src="./partials/chevron-up.html"></include>
 
     <main>
       <!-- Ruslan - Hero -->
@@ -61,6 +102,8 @@
     <include src="./partials/modal/mod-header.html"></include>
     <!-- Radchenko Ivan - Modal ingridients of products -->
     <include src="./partials/modal/mod-ingridents.html"></include>
+    <include src="./partials/modal/mod-ice-coffee.html"></include>
+    <include src="./partials/modal/mod-milkshakes.html"></include>
     <!-- Tetiana Pesotska - mod-about -->
     <include src="./partials/modal/mod-about.html"></include>
     <!-- Tetiana Ustymenko  - mod-locations -->

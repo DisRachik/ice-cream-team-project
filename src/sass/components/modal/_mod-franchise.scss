@@ -12,16 +12,20 @@
 }
 
 .modal {
+
   position: absolute;
-  top: 50%;
-  left: 50%;
+  // top: 50%;
+  // left: 50%;
+  top: 2%;
+  left: 2%;
+  width: 95vw;
 
-  transform: translateX(-50%) translateY(-50%);
+  // transform: translateX(-50%) translateY(-50%);
 
-  min-width: 95%;
+  // min-width: 95%;
 
-  min-width: 280px;
-  height: 674px;
+  // min-width: 280px;
+  // height: 674px;
 
   background: #fcfcfc;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -30,16 +34,54 @@
   border-radius: 10px;
 
   transition: opacity 800ms 500ms ease;
+  // добавила
+  overflow-y: scroll;
 
-  @include media('phone') {
-    padding: 28px;
+  @media screen and (min-width: 320px) {
+    width: 280px;
+    height: 95vh;
+    max-height: 674px;
+
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
 
+  // @include media('phone') {
+  //   padding: 28px;
+  // }
+
   @include media('tablet') {
+    // width: 568px;
+    // height: 668px;ranchise__field
+    // padding-left: 58px;
+    // padding-right: 58px;
+    top: 50%;
+
     width: 568px;
-    height: 668px;
-    padding-left: 58px;
-    padding-right: 58px;
+    height: 95vh;
+    max-height: 668px;
+
+    // padding: 32px 60px;
+    // padding-top: 32;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .franchise__form {
+    @include media('tablet') {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  .franchise__wrap {
+    position: relative;
+    margin-bottom: 12px;
+
+    @include media('tablet') {
+      margin-bottom: 16px;
+    }
   }
 
   &__btn {
@@ -84,11 +126,11 @@
   @include media('tablet') {
     font-size: 20px;
     line-height: 1.4;
+    margin-top: 32px;
   }
 }
 
 .franchise__text {
-  // @extend %text;
   display: block;
   margin-bottom: 24px;
   font-weight: 400;
@@ -103,22 +145,6 @@
   }
 }
 
-.franchise_form {
-  @include media('tablet') {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-
-.franchise__wrap {
-  position: relative;
-  margin-bottom: 12px;
-
-  @include media('tablet') {
-    margin-bottom: 16px;
-  }
-}
-
 .franchise__textarea {
   position: relative;
   margin-bottom: 24px;
@@ -127,24 +153,6 @@
   @include media('tablet') {
     margin-bottom: 32px;
     height: 84px;
-  }
-}
-
-.franchise__label {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  transition: transform 0.5s;
-
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.4;
-  color: #131313;
-
-  @include media('tablet') {
-    font-size: 14px;
-    left: 16px;
   }
 }
 
@@ -188,47 +196,7 @@
   border: 1px solid #0a8817;
 }
 
-.franchise__field:focus + .franchise__label,
-.franchise__field:not(:placeholder-shown) + .franchise__label {
-  transform: translateY(-30px);
-  transition: transform 0.4s linear;
-
-  font-size: 10px;
-
-  @include media('tablet') {
-    transform: translateY(-37px);
-
-    font-size: 12px;
-  }
-}
-
-.franchise__comment:focus + .franchise__label,
-.franchise__comment:not(:placeholder-shown) + .franchise__label {
-  transform: translateY(-30px);
-  transition: transform 0.4s linear;
-
-  font-size: 10px;
-
-  @include media('tablet') {
-    transform: translateY(-36px);
-
-    font-size: 12px;
-  }
-}
-
 .franchise__btn {
-  // position: absolute;
-  // top: 8px;
-  // right: 8px;
-
-  // padding: 0;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // border: none;
-  // background-color: transparent;
-  // cursor: pointer;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -260,5 +228,14 @@
   cursor: pointer;
   @include media('tablet') {
     min-width: 121px;
+  }
+}
+
+.modal__icon {
+  width: 20px;
+  height: 20px;
+  @include media('tablet') {
+    width: 24px;
+    height: 24px;
   }
 }

@@ -1,0 +1,84 @@
+<div
+  class="backdrop-milkshakes milkshakes-modal-is-hidden"
+  data-milkshakes-modal
+>
+  <div class="milkshakes-modal">
+    <button class="milkshakes-modal__btn" data-milkshakes-modal-close>
+      <svg class="milkshakes-modal__icon">
+        <use
+          href="./images/icons/modal-franchise.svg#icon-clarity_close-line"
+        ></use>
+      </svg>
+    </button>
+
+    <strong class="milkshakes__title">Milkshakes</strong>
+    <div class="milkshakes__thumb milkshakes__thumb--brown"></div>
+
+    <ul class="milkshakes-modal__list-nutrients">
+      <li class="milkshakes-modal__item-nutrients">
+        <span class="milkshakes-modal__weight">320</span>kcal
+      </li>
+      <li class="milkshakes-modal__item-nutrients">
+        <span class="milkshakes-modal__weight">4g</span>Prote...
+      </li>
+      <li class="milkshakes-modal__item-nutrients">
+        <span class="milkshakes-modal__weight">8.2g</span>Fats
+      </li>
+      <li class="milkshakes-modal__item-nutrients">
+        <span class="milkshakes-modal__weight">40.4g</span>Carbs
+      </li>
+    </ul>
+
+    <p class="milkshakes__text">Ingredients</p>
+    <div class="milkshakes__list">
+      <ul>
+        <li class="milkshakes__items">Milk</li>
+        <li class="milkshakes__items">Belgian chocolate</li>
+        <li class="milkshakes__items">Cream</li>
+        <li class="milkshakes__items">Cocoa powder</li>
+        <li class="milkshakes__items">Sugar</li>
+        <li class="milkshakes__items">Vanilla sugar</li>
+      </ul>
+      <ul>
+        <li class="milkshakes__items milkshakes__items-text">100ml</li>
+        <li class="milkshakes__items milkshakes__items-text">20g</li>
+        <li class="milkshakes__items milkshakes__items-text">150 ml</li>
+        <li class="milkshakes__items milkshakes__items-text">30g</li>
+        <li class="milkshakes__items milkshakes__items-text">40g</li>
+        <li class="milkshakes__items milkshakes__items-text">10g</li>
+      </ul>
+    </div>
+    <div class="milkshakes__wrapper">
+      <form name="milkshakes-form" class="milkshakes-form">
+        <label class="milkshakes-form__field">
+          <input
+            type="text"
+            name="user-name-milkshakes"
+            placeholder="Name"
+            class="milkshakes-form__input"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Username must be two words separated by space."
+          />
+        </label>
+        <label class="milkshakes-form__field">
+          <input
+            type="tel"
+            name="phone_number-milkshakes"
+            placeholder="Phone"
+            class="milkshakes-form__input"
+            autocomplete="off"
+            pattern="^[ 0-9]+$"
+          />
+        </label>
+        <label class="milkshakes-form__field milkshakes-form__field--mb">
+          <textarea
+            name="comment-milkshakes"
+            placeholder="Comment"
+            class="milkshakes-form__comment"
+          ></textarea>
+        </label>
+        <button type="submit" class="milkshakes-form__btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

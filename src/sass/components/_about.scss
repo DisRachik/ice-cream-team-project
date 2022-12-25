@@ -39,6 +39,7 @@
 }
 
 .about__title {
+  width: 200px;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 32px;
@@ -54,6 +55,7 @@
   color: #fcfcfc;
 
   @media screen and (min-width: 768px) {
+    width: 100%;
     margin-bottom: 72px;
 
     font-size: 34px;
@@ -92,6 +94,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    margin: 0;
     width: 490px;
     height: 490px;
     border-radius: 50%;
@@ -116,7 +119,6 @@
   }
 
   @media screen and (min-width: 481px) {
-    top: 22px;
     background-image: url(./../images/about/about_m1x.png);
 
     @media (min-device-pixel-ratio: 2),
@@ -127,7 +129,7 @@
   }
 
   @media screen and (min-width: 769px) {
-    top: 22px;
+    top: 26px;
     background-image: url(./../images/about/about_l1x.png);
 
     @media (min-device-pixel-ratio: 2),
@@ -135,6 +137,10 @@
       (min-resolution: 2dppx) {
       background-image: url(./../images/about/about_l2x.png);
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 39px;
   }
 }
 
@@ -194,8 +200,6 @@
 }
 
 .about__desc-one {
-  // padding-right: 50px;
-  // padding-left: 50px;
   margin-bottom: 4px;
   margin-top: 40px;
 
@@ -219,8 +223,6 @@
 }
 
 .about__desc-two {
-  // padding-right: 50px;
-  // padding-left: 50px;
   margin-bottom: 4px;
 
   font-weight: 400;
@@ -245,8 +247,6 @@
 }
 
 .about__desc-three {
-  // padding-right: 50px;
-  // padding-left: 50px;
   margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.94;
@@ -289,10 +289,19 @@
 
   border-radius: 10px;
   border: none;
-  cursor: pointer;
+  cursor: url("data:image/svg+xml;charset=utf8,%3Csvg width='19' height='24' viewBox='0 0 19 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.04696 2.01171L16.9811 12.2169C18.8522 13.9633 17.8177 17.1 15.2748 17.3907L11.1573 17.8612C10.124 17.9793 9.15329 18.4167 8.38025 19.1124L6.0069 21.2484C4.07633 22.9859 1 21.6159 1 19.0186V4.20487C1 1.58174 4.12929 0.221893 6.04696 2.01171Z' stroke='%23131313' stroke-width='2'/%3E%3C/svg%3E"),
+    pointer;
 
   color: #000000;
   background-color: #f8d24e;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+  }
 
   &:hover {
     background-color: #0a8817;
@@ -312,8 +321,8 @@
 
 .about__icon {
   fill: #000000;
+}
 
-  &:focus {
-    fill: #fcfcfc;
-  }
+.about__btn:focus .about__icon{
+  fill: #FCFCFC;
 }
