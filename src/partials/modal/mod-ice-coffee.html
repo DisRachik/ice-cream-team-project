@@ -1,0 +1,84 @@
+<div
+  class="backdrop-ice-coffee ice-coffee-modal-is-hidden"
+  data-ice-coffee-modal
+>
+  <div class="ice-coffee-modal">
+    <button class="ice-coffee-modal__btn" data-ice-coffee-modal-close>
+      <svg class="ice-coffee-modal__icon">
+        <use
+          href="./images/icons/modal-franchise.svg#icon-clarity_close-line"
+        ></use>
+      </svg>
+    </button>
+
+    <strong class="ice-coffee__title">Ice coffee</strong>
+    <div class="ice-coffee__thumb ice-coffee__thumb--yellow"></div>
+
+    <ul class="ice-coffee-modal__list-nutrients">
+      <li class="ice-coffee-modal__item-nutrients">
+        <span class="ice-coffee-modal__weight">320</span>kcal
+      </li>
+      <li class="ice-coffee-modal__item-nutrients">
+        <span class="ice-coffee-modal__weight">4g</span>Prote...
+      </li>
+      <li class="ice-coffee-modal__item-nutrients">
+        <span class="ice-coffee-modal__weight">8.2g</span>Fats
+      </li>
+      <li class="ice-coffee-modal__item-nutrients">
+        <span class="ice-coffee-modal__weight">40.4g</span>Carbs
+      </li>
+    </ul>
+
+    <p class="ice-coffee__text">Ingredients</p>
+    <div class="ice-coffee__list">
+      <ul>
+        <li class="ice-coffee__items">Milk</li>
+        <li class="ice-coffee__items">Belgian chocolate</li>
+        <li class="ice-coffee__items">Cream</li>
+        <li class="ice-coffee__items">Cocoa powder</li>
+        <li class="ice-coffee__items">Sugar</li>
+        <li class="ice-coffee__items">Vanilla sugar</li>
+      </ul>
+      <ul>
+        <li class="ice-coffee__items ice-coffee__items-text">100ml</li>
+        <li class="ice-coffee__items ice-coffee__items-text">20g</li>
+        <li class="ice-coffee__items ice-coffee__items-text">150 ml</li>
+        <li class="ice-coffee__items ice-coffee__items-text">30g</li>
+        <li class="ice-coffee__items ice-coffee__items-text">40g</li>
+        <li class="ice-coffee__items ice-coffee__items-text">10g</li>
+      </ul>
+    </div>
+    <div class="ice-coffee__wrapper">
+      <form name="ice-coffee-form" class="ice-coffee-form">
+        <label class="ice-coffee-form__field">
+          <input
+            type="text"
+            name="user-name-ice-coffee"
+            placeholder="Name"
+            class="ice-coffee-form__input"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Username must be two words separated by space."
+          />
+        </label>
+        <label class="ice-coffee-form__field">
+          <input
+            type="tel"
+            name="phone_number-ice-coffee"
+            placeholder="Phone"
+            class="ice-coffee-form__input"
+            autocomplete="off"
+            pattern="^[ 0-9]+$"
+          />
+        </label>
+        <label class="ice-coffee-form__field ice-coffee-form__field--mb">
+          <textarea
+            name="comment-ice-coffee"
+            placeholder="Comment"
+            class="ice-coffee-form__comment"
+          ></textarea>
+        </label>
+        <button type="submit" class="ice-coffee-form__btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
