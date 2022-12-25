@@ -11,7 +11,7 @@
   visibility: hidden;
 }
 
-.modal {
+.modal-franchise {
 
   position: absolute;
   // top: 50%;
@@ -26,6 +26,7 @@
 
   // min-width: 280px;
   // height: 674px;
+  padding: 30px;
 
   background: #fcfcfc;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -63,7 +64,8 @@
     max-height: 668px;
 
     // padding: 32px 60px;
-    // padding-top: 32;
+    // padding-top: 32px;
+    padding-bottom: 32px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -126,11 +128,16 @@
   @include media('tablet') {
     font-size: 20px;
     line-height: 1.4;
-    margin-top: 32px;
+    
   }
 }
 
 .franchise__text {
+
+//   display: flex;
+// margin-left: auto;
+// margin-right: auto;
+  
   display: block;
   margin-bottom: 24px;
   font-weight: 400;
@@ -231,7 +238,7 @@
   }
 }
 
-.modal__icon {
+.modal-franchise__icon {
   width: 20px;
   height: 20px;
   @include media('tablet') {
