@@ -17,5 +17,5 @@ import './JS/mod-ingredients';
 
 // Rostyslav and Tetiana Nivchyk - Reviews
 import './js/reviews';
-import './js/mod-ice-coffee';
-import './js/mod-milkshakes';
+import './JS/mod-ice-coffee';
+import './JS/mod-milkshakes';
