@@ -1,82 +1,43 @@
 <header class="header" id="header" data-header>
-  <div class="container header__flex">
+    <div class="container header__flex">
     <nav class="header__nav">
-      <a href="./index.html" class="logo"
-        ><img
-          srcset="
-            ./images/header/logo/logophon.png       40w,
-            ./images/header/logo/Logo_tablet.png    48w,
-            ./images/header/logo/Logo.png           60w,
-            ./images/header/logo/logophone2x.png    80w,
-            ./images/header/logo/Logo_tablet2x.png  96w,
-            ./images/header/logo/Logo2x.png        120w
-          "
-          sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 480px) 40px, 100vw"
-          src="./images/header/logo/logophon.png"
-          alt="Logo"
-          loading="lazy"
-      /></a>
-      <div class="mobile__menu" id="menu-container" header-menu>
-        <ul class="navigation">
-          <li class="navigation__li">
-            <a href="" class="navigation__link">Home</a>
-          </li>
-          <li class="navigation__li">
-            <a href="" class="navigation__link">How it’s made?</a>
-          </li>
-          <li class="navigation__li">
-            <a href="" class="navigation__link">Our products</a>
-          </li>
-          <li class="navigation__li">
-            <a href="" class="navigation__link">Contact</a>
-          </li>
-        </ul>
-        <button
-          type="button"
-          class="header__butt header__btn-menu"
-          header-modal-open
-        >
-          Buy now
-          <svg class="header__btn-icon" width="16px" height="12px">
-            <use
-              href="./images/header/SVG/header_svg.svg#icon-btn_vector"
-            ></use>
-          </svg>
-        </button>
-      </div>
-      <button
-        type="button"
-        class="header__menu is-open"
-        header-menu-button
-        aria-expanded="false"
-        aria-controls="menu-container"
-      >
-        <svg
-          class="menu__svg"
-          width="20px"
-          height="20px"
-          aria-label="mobile-menu"
-        >
-          <use
-            class="menu__close"
-            href="./images/header/SVG/header_svg.svg#icon-eva_menu-fill"
-          ></use>
-          <use
-            class="menu__open"
-            href="./images/header/SVG/header_svg.svg#icon-eva_menu_burger_close"
-          ></use>
-        </svg>
-      </button>
-    </nav>
-    <button
-      type="button"
-      class="header__butt header__btn-tabldesc"
-      header-mod-open
-    >
-      Buy now
-      <svg class="header__btn-icon" width="16px" height="12px">
+     <a href="./index.html" class="logo"><img srcset="
+            ./images/header/logo/logophon.png 40w, 
+            ./images/header/logo/Logo_tablet.png 48w, 
+            ./images/header/logo/Logo.png 60w,
+            ./images/header/logo/logophone2x.png 80w, 
+            ./images/header/logo/Logo_tablet2x.png 96w, 
+            ./images/header/logo/Logo2x.png 120w"  
+            sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 480px) 40px, 100vw"
+            src="./images/header/logo/logophon.png" 
+            alt="Logo" 
+            loading="lazy"
+            ></a>   
+        <div class="mobile__menu" id="menu-container" data-header-menu>  
+    <ul class="navigation">
+        <li class="navigation__li"><a href="#header" class="navigation__link">Home</a></li>
+        <li class="navigation__li"><a href="" class="navigation__link">How it’s made?</a></li>
+        <li class="navigation__li"><a href="" class="navigation__link">Our products</a></li>
+        <li class="navigation__li"><a href="" class="navigation__link">Contact</a></li>
+    </ul>
+<button type="button" class="header__butt header__btn-menu" data-header-modal-open>Buy now
+    <svg class="header__btn-icon" width="16px" height="12px">
         <use href="./images/header/SVG/header_svg.svg#icon-btn_vector"></use>
-      </svg>
+    </svg>
+</button>
+</div>
+<button type="button" class="header__menu is-open" data-header-menu-button aria-expanded="false" aria-controls="menu-container">
+        <svg class="menu__svg" width="20px" height="20px" aria-label="mobile-menu">
+        <use class="menu__close" href="./images/header/SVG/header_svg.svg#icon-eva_menu-fill"></use>
+        <use class="menu__open" href="./images/header/SVG/header_svg.svg#icon-eva_menu_burger_close"></use>
+    </svg>    
+</button>       
+    </nav>
+    <button type="button" class="header__butt header__btn-tabldesc" data-header-mod-open>Buy now
+        <svg class="header__btn-icon" width="16px" height="12px">
+            <use href="./images/header/SVG/header_svg.svg#icon-btn_vector"></use>
+        </svg>
     </button>
-  </div>
-</header>
+</div>
+</header>  
+
