@@ -69,22 +69,6 @@
     font-size: 36px;
     line-height: 1.25;
   }
-
-  &:hover {
-    color: #0a8817;
-    text-decoration-line: underline;
-   
-  }
-
-  &:focus {
-    color: #fcfcfc;
-    text-decoration-line: underline;
-  }
-
-  &:disabled {
-    color:  #ABABAB;
-    text-decoration-line: underline;
-  }
 }
 
 .about__thumb {
@@ -110,6 +94,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    margin: 0;
     width: 490px;
     height: 490px;
     border-radius: 50%;
@@ -134,7 +119,6 @@
   }
 
   @media screen and (min-width: 481px) {
-    top: 22px;
     background-image: url(./../images/about/about_m1x.png);
 
     @media (min-device-pixel-ratio: 2),
@@ -145,7 +129,7 @@
   }
 
   @media screen and (min-width: 769px) {
-    top: 22px;
+    top: 26px;
     background-image: url(./../images/about/about_l1x.png);
 
     @media (min-device-pixel-ratio: 2),
@@ -153,6 +137,10 @@
       (min-resolution: 2dppx) {
       background-image: url(./../images/about/about_l2x.png);
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 39px;
   }
 }
 
