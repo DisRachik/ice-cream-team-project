@@ -1,0 +1,93 @@
+<div class="backdrop" data-modal>
+  <div class="ingridents-modal">
+    <button class="modal__btn" data-modal-close>
+      <svg class="modal__icon" width="20" height="20">
+        <use
+          href="./images/icons/modal-franchise.svg#icon-clarity_close-line"
+        ></use>
+      </svg>
+    </button>
+
+    <strong class="ingridents__title">Chololate icecream</strong>
+    <div class="ingridents__thumb ingridents__thumb--green"></div>
+
+    <ul class="ingredients-modal__list-nutrients">
+      <li class="ingredients-modal__item-nutrients">
+        <span class="ingredients-modal__weight">320</span>kcal
+      </li>
+      <li class="ingredients-modal__item-nutrients">
+        <span class="ingredients-modal__weight">4g</span>Prote...
+      </li>
+      <li class="ingredients-modal__item-nutrients">
+        <span class="ingredients-modal__weight">8.2g</span>Fats
+      </li>
+      <li class="ingredients-modal__item-nutrients">
+        <span class="ingredients-modal__weight">40.4g</span>Carbs
+      </li>
+    </ul>
+
+    <h3 class="ingridents__text">Ingredients</h3>
+    <div class="ingridents__list">
+      <ul>
+        <li class="ingridents__items">Milk</li>
+        <li class="ingridents__items">Belgian chocolate</li>
+        <li class="ingridents__items">Cream</li>
+        <li class="ingridents__items">Cocoa powder</li>
+        <li class="ingridents__items">Sugar</li>
+        <li class="ingridents__items">Vanilla sugar</li>
+      </ul>
+      <ul>
+        <li class="ingridents__items ingridents__items-text">100ml</li>
+        <li class="ingridents__items ingridents__items-text">20g</li>
+        <li class="ingridents__items ingridents__items-text">150 ml</li>
+        <li class="ingridents__items ingridents__items-text">30g</li>
+        <li class="ingridents__items ingridents__items-text">40g</li>
+        <li class="ingridents__items ingridents__items-text">10g</li>
+      </ul>
+    </div>
+    <div class="ingridents__wrapper">
+      <form class="ingridents__form" name="contact_form">
+        <div class="ingridents__wrap">
+          <input
+            class="ingridents__field"
+            type="text"
+            name="name"
+            id="name"
+            placeholder=" "
+            autocomplete="off"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Username must be two words separated by space."
+          />
+          <label class="ingridents__label" for="name">Name</label>
+        </div>
+        <div class="ingridents__wrap">
+          <input
+            class="ingridents__field"
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder=" "
+            autocomplete="off"
+            pattern="^[ 0-9]+$"
+            title="Please enter your phone number."
+          />
+          <label class="ingridents__label" for="tel">Phone</label>
+        </div>
+        <div class="ingridents__textarea">
+          <textarea
+            class="ingridents__comment"
+            name="comment"
+            id="comment"
+            placeholder=" "
+            rows="3"
+            autocomplete="off"
+          ></textarea>
+          <label class="ingridents__label comments" for="comment"
+            >Comment</label
+          >
+        </div>
+        <button type="submit" class="ingridents__btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
