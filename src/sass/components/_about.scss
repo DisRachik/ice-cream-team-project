@@ -73,7 +73,6 @@
   &:hover {
     color: #0a8817;
     text-decoration-line: underline;
-   
   }
 
   &:focus {
@@ -82,7 +81,7 @@
   }
 
   &:disabled {
-    color:  #ABABAB;
+    color: #ababab;
     text-decoration-line: underline;
   }
 }
@@ -301,7 +300,6 @@
 
   border-radius: 10px;
   border: none;
-  cursor: pointer;
 
   color: #000000;
   background-color: #f8d24e;
@@ -334,6 +332,6 @@
   fill: #000000;
 
   &:focus {
-    fill: #FCFCFC;
+    fill: #fcfcfc;
   }
 }
