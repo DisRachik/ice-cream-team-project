@@ -1,7 +1,7 @@
-<div class="backdrop ingridents-modal-is-hidden" data-ingridents-modal>
+<div class="backdrop" data-modal>
   <div class="ingridents-modal">
-    <button class="ingridents-modal__btn" data-ingridents-modal-close>
-      <svg class="ingridents-modal__icon">
+    <button class="modal__btn" data-modal-close>
+      <svg class="modal__icon" width="20" height="20">
         <use
           href="./images/icons/modal-franchise.svg#icon-clarity_close-line"
         ></use>
@@ -26,7 +26,7 @@
       </li>
     </ul>
 
-    <p class="ingridents__text">Ingredients</p>
+    <h3 class="ingridents__text">Ingredients</h3>
     <div class="ingridents__list">
       <ul>
         <li class="ingridents__items">Milk</li>
@@ -46,35 +46,47 @@
       </ul>
     </div>
     <div class="ingridents__wrapper">
-      <form name="ingredients-form" class="ingredients-form">
-        <label class="ingredients-form__field">
+      <form class="ingridents__form" name="contact_form">
+        <div class="ingridents__wrap">
           <input
+            class="ingridents__field"
             type="text"
-            name="user-name-ingredients"
-            placeholder="Name"
-            class="ingredients-form__input"
+            name="name"
+            id="name"
+            placeholder=" "
+            autocomplete="off"
             pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
             title="Username must be two words separated by space."
           />
-        </label>
-        <label class="ingredients-form__field">
+          <label class="ingridents__label" for="name">Name</label>
+        </div>
+        <div class="ingridents__wrap">
           <input
+            class="ingridents__field"
             type="tel"
-            name="phone_number-ingredients"
-            placeholder="Phone"
-            class="ingredients-form__input"
+            name="tel"
+            id="tel"
+            placeholder=" "
             autocomplete="off"
             pattern="^[ 0-9]+$"
+            title="Please enter your phone number."
           />
-        </label>
-        <label class="ingredients-form__field ingredients-form__field--mb">
+          <label class="ingridents__label" for="tel">Phone</label>
+        </div>
+        <div class="ingridents__textarea">
           <textarea
-            name="comment-ingredients"
-            placeholder="Comment"
-            class="ingredients-form__comment"
+            class="ingridents__comment"
+            name="comment"
+            id="comment"
+            placeholder=" "
+            rows="3"
+            autocomplete="off"
           ></textarea>
-        </label>
-        <button type="submit" class="ingredients-form__btn">Submit</button>
+          <label class="ingridents__label comments" for="comment"
+            >Comment</label
+          >
+        </div>
+        <button type="submit" class="ingridents__btn">Submit</button>
       </form>
     </div>
   </div>
