@@ -315,7 +315,12 @@
 }
 
 .ingridents__field:focus,
-.ingridents__comment:focus {
+.ingridents__comment:focus,
+.ingridents__field:hover,
+.ingridents__comment:hover {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' fill='none'%3E%3Cpath stroke='%23131313' stroke-width='2' d='m18.047 14.012 10.934 10.205c1.871 1.746.837 4.883-1.706 5.174l-4.118.47a5 5 0 0 0-2.777 1.251l-2.373 2.136c-1.93 1.738-5.007.368-5.007-2.23V16.206c0-2.623 3.13-3.983 5.047-2.193Z'/%3E%3C/svg%3E")
+      12 12,
+    pointer;
   border: 1px solid #0a8817;
 }
 
@@ -336,6 +341,7 @@
 .ingridents__comment:focus + .ingridents__label,
 .ingridents__comment:not(:placeholder-shown) + .ingridents__label {
   transform: translateY(-30px);
+
   transition: transform 0.4s linear;
 
   font-size: 10px;
@@ -374,10 +380,11 @@
   border-radius: 10px;
   background: #f8d24e;
 
-  // cursor: pointer;
-  // @include media('tablet') {
-  //   min-width: 121px;
-  // }
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include media('tablet') {
+    min-width: 121px;
+  }
 }
 
 .ingridents__btn:hover,
@@ -386,6 +393,7 @@
       12 12,
     pointer;
   background-color: #0a8817;
+
   border-radius: 10px;
 }
 .ingridents__btn:focus {
