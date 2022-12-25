@@ -1,6 +1,3 @@
-// Rostyslav and Tetiana Nivchyk - Reviews
-import './js/reviews';
-
 // Tetiana Ustumenko franchise-modal
 import './js/mod-franchise';
 // Ustymenko Tetiana - location-modal
