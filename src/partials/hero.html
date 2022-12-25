@@ -30,10 +30,12 @@
         <a class="hero__anchor" href="#products">Products</a>
       </li>
       <li class="hero__item">
-        <a class="hero__anchor--next" href="#about">How it’s made?</a>
+        <a class="hero__anchor--color" href="#about">How it’s made?</a>
       </li>
     </ul>
-    <picture class="hero__picture">
+    <picture
+      class="hero__picture animate__animated animate__fadeInRight animate__delay-1s"
+    >
       <!-- Desktop screen -->
       <source
         media="(min-width: 1200px)"
@@ -56,8 +58,8 @@
       <source
         media="(max-width: 767.98px)"
         srcset="
-          ./images/hero/desktop-1_1x.png 1x,
-          ./images/hero/desktop-1_2x.png 2x
+          ./images/hero/mobile-1_1x.png 1x,
+          ./images/hero/mobile-1_2x.png 2x
         "
         type="image/png"
       />
@@ -69,7 +71,9 @@
         loading="lazy"
       />
     </picture>
-    <picture class="hero__snowball">
+    <picture
+      class="hero__snowball animate__animated animate__fadeInLeft animate__delay-1s"
+    >
       <!-- Desktop screen -->
       <source
         media="(min-width: 1200px)"
@@ -101,9 +105,11 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et
       </p>
-      <svg class="hero__icon" width="40" height="16">
-        <use href="./images/hero/hero-icons.svg#hero-icons"></use>
-      </svg>
+      <a class="hero__icon" href="#gallery">
+        <svg class="hero__icon--color" width="40" height="16">
+          <use href="./images/hero/hero-icons.svg#hero-icons"></use>
+        </svg>
+      </a>
     </div>
   </div>
 </section>

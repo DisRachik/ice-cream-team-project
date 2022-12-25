@@ -1,33 +1,26 @@
 .hero {
-  background-color: #84a278;
+  background-color: getColor('main-bg');
 
   &__box {
     position: relative;
 
     padding-top: 50px;
-    padding-bottom: 236px;
+    padding-bottom: 237px;
 
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
 
-    @media screen and (max-width: 767.98px) {
-      max-width: 480px;
-      background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="320" height="50" fill="none"%3E%3Cellipse cx="241.993" cy="46.276" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="247.628" cy="42.571" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="254.126" cy="38.403" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="260.195" cy="34.698" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="256.726" cy="44.423" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="262.361" cy="40.718" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="268.86" cy="36.55" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="274.929" cy="32.846" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="269.296" cy="43.034" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="274.93" cy="39.329" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="281.43" cy="35.161" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="287.496" cy="31.457" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="281.428" cy="41.182" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="287.061" cy="37.477" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="293.561" cy="33.309" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="299.629" cy="29.604" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="285.331" cy="46.276" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="290.965" cy="42.571" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="298.765" cy="46.739" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="297.465" cy="38.403" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="305.266" cy="42.571" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="311.334" cy="46.739" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="303.533" cy="34.698" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="311.334" cy="38.865" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="317.401" cy="43.034" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="215.559" cy="15.711" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="221.192" cy="12.006" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="227.694" cy="7.838" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="233.759" cy="4.133" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="204.724" cy="15.247" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="210.357" cy="11.542" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="216.857" cy="7.375" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="222.924" cy="3.67" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="228.992" cy="46.276" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="234.625" cy="42.571" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="241.125" cy="38.403" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="247.193" cy="34.698" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="222.058" cy="43.498" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="227.692" cy="39.793" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="234.192" cy="35.624" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="240.259" cy="31.92" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="224.659" cy="33.772" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="230.292" cy="30.067" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="236.794" cy="25.899" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="242.86" cy="22.194" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="224.659" cy="17.563" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="230.292" cy="13.858" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="236.794" cy="9.69" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="242.86" cy="5.985" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="223.358" cy="26.363" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="228.993" cy="22.657" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="235.492" cy="18.49" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="241.559" cy="14.785" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="196.056" cy="12.932" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="201.691" cy="9.227" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="208.191" cy="5.059" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cpath fill="%23F8D24E" d="M207.757 15.71c1.436 0 2.601-1.244 2.601-2.778 0-1.535-1.165-2.779-2.601-2.779s-2.6 1.244-2.6 2.779c0 1.534 1.164 2.778 2.6 2.778Z"/%3E%3Cellipse fill="%23F8D24E" rx="2.643" ry="2.816" transform="matrix(.9869 -.16168 .14201 .98991 85.581 33.982)"/%3E%3Cellipse fill="%23F8D24E" rx="2.643" ry="2.816" transform="matrix(.9869 -.16168 .14201 .98991 90.7 29.34)"/%3E%3Cellipse fill="%23F8D24E" rx="2.643" ry="2.816" transform="matrix(.9869 -.16168 .14201 .98991 96.62 24.09)"/%3E%3Cellipse fill="%23F8D24E" rx="2.643" ry="2.816" transform="matrix(.9869 -.16168 .14201 .98991 102.173 19.377)"/%3E%3Cellipse cx="2.72" cy="33.551" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="8.611" cy="29.792" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="15.413" cy="25.562" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="21.758" cy="21.802" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="5.44" cy="40.6" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="11.333" cy="36.841" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="18.134" cy="32.611" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="24.479" cy="28.851" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="12.238" cy="44.36" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="18.132" cy="40.6" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="24.931" cy="36.371" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="31.276" cy="32.611" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="19.943" cy="46.711" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="25.836" cy="42.95" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="32.638" cy="38.721" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="38.981" cy="34.961" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="29.917" cy="47.181" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="35.81" cy="43.421" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="42.61" cy="39.191" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="48.955" cy="35.431" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="41.704" cy="47.18" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="47.596" cy="43.42" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="54.396" cy="39.191" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="60.742" cy="35.431" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="51.674" cy="46.71" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="57.566" cy="42.95" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="64.367" cy="38.721" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="70.712" cy="34.961" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="63.006" cy="46.24" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="68.898" cy="42.48" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="75.699" cy="38.251" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="82.044" cy="34.491" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="73.432" cy="34.021" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="79.324" cy="30.261" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="86.124" cy="26.032" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="92.47" cy="22.272" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3C/svg%3E');
-    }
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="320" height="50" fill="none"%3E%3Cellipse cx="241.993" cy="46.276" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="247.628" cy="42.571" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="254.126" cy="38.403" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="260.195" cy="34.698" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="256.726" cy="44.423" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="262.361" cy="40.718" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="268.86" cy="36.55" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="274.929" cy="32.846" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="269.296" cy="43.034" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="274.93" cy="39.329" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="281.43" cy="35.161" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="287.496" cy="31.457" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="281.428" cy="41.182" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="287.061" cy="37.477" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="293.561" cy="33.309" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="299.629" cy="29.604" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="285.331" cy="46.276" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="290.965" cy="42.571" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="298.765" cy="46.739" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="297.465" cy="38.403" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="305.266" cy="42.571" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="311.334" cy="46.739" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="303.533" cy="34.698" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="311.334" cy="38.865" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="317.401" cy="43.034" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="215.559" cy="15.711" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="221.192" cy="12.006" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="227.694" cy="7.838" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="233.759" cy="4.133" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="204.724" cy="15.247" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="210.357" cy="11.542" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="216.857" cy="7.375" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="222.924" cy="3.67" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="228.992" cy="46.276" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="234.625" cy="42.571" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="241.125" cy="38.403" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="247.193" cy="34.698" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="222.058" cy="43.498" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="227.692" cy="39.793" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="234.192" cy="35.624" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="240.259" cy="31.92" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="224.659" cy="33.772" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="230.292" cy="30.067" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="236.794" cy="25.899" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="242.86" cy="22.194" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="224.659" cy="17.563" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="230.292" cy="13.858" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="236.794" cy="9.69" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="242.86" cy="5.985" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="223.358" cy="26.363" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="228.993" cy="22.657" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="235.492" cy="18.49" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="241.559" cy="14.785" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="196.056" cy="12.932" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="201.691" cy="9.227" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cellipse cx="208.191" cy="5.059" fill="%23F8D24E" rx="2.6" ry="2.779"/%3E%3Cpath fill="%23F8D24E" d="M207.757 15.71c1.436 0 2.601-1.244 2.601-2.778 0-1.535-1.165-2.779-2.601-2.779s-2.6 1.244-2.6 2.779c0 1.534 1.164 2.778 2.6 2.778Z"/%3E%3Cellipse fill="%23F8D24E" rx="2.643" ry="2.816" transform="matrix(.9869 -.16168 .14201 .98991 85.581 33.982)"/%3E%3Cellipse fill="%23F8D24E" rx="2.643" ry="2.816" transform="matrix(.9869 -.16168 .14201 .98991 90.7 29.34)"/%3E%3Cellipse fill="%23F8D24E" rx="2.643" ry="2.816" transform="matrix(.9869 -.16168 .14201 .98991 96.62 24.09)"/%3E%3Cellipse fill="%23F8D24E" rx="2.643" ry="2.816" transform="matrix(.9869 -.16168 .14201 .98991 102.173 19.377)"/%3E%3Cellipse cx="2.72" cy="33.551" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="8.611" cy="29.792" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="15.413" cy="25.562" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="21.758" cy="21.802" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="5.44" cy="40.6" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="11.333" cy="36.841" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="18.134" cy="32.611" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="24.479" cy="28.851" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="12.238" cy="44.36" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="18.132" cy="40.6" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="24.931" cy="36.371" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="31.276" cy="32.611" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="19.943" cy="46.711" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="25.836" cy="42.95" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="32.638" cy="38.721" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="38.981" cy="34.961" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="29.917" cy="47.181" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="35.81" cy="43.421" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="42.61" cy="39.191" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="48.955" cy="35.431" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="41.704" cy="47.18" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="47.596" cy="43.42" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="54.396" cy="39.191" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="60.742" cy="35.431" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="51.674" cy="46.71" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="57.566" cy="42.95" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="64.367" cy="38.721" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="70.712" cy="34.961" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="63.006" cy="46.24" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="68.898" cy="42.48" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="75.699" cy="38.251" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="82.044" cy="34.491" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="73.432" cy="34.021" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="79.324" cy="30.261" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="86.124" cy="26.032" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3Cellipse cx="92.47" cy="22.272" fill="%23F8D24E" rx="2.72" ry="2.82"/%3E%3C/svg%3E');
 
-    @media screen and (min-width: 768px) {
-      max-width: 768px;
-
+    @include media('tablet') {
       padding-top: 14px;
       padding-bottom: 24px;
 
       background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="768" height="69" fill="none"%3E%3Cellipse cx="655.854" cy="63.761" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="663.865" cy="58.776" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="673.877" cy="52.795" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="681.888" cy="47.81" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="676.881" cy="61.767" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="684.892" cy="56.783" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="694.905" cy="50.801" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="702.915" cy="45.816" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="694.905" cy="59.773" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="702.915" cy="54.788" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="712.928" cy="48.806" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="720.939" cy="43.822" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="712.928" cy="56.783" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="720.939" cy="51.798" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="730.952" cy="45.816" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="738.962" cy="40.831" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="717.935" cy="63.761" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="725.945" cy="58.776" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="736.96" cy="64.758" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="735.958" cy="52.795" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="746.972" cy="58.776" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="755.984" cy="64.758" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="743.969" cy="47.81" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="755.984" cy="53.792" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="763.995" cy="59.774" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="617.805" cy="21.888" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="625.815" cy="16.903" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="635.828" cy="10.921" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="643.838" cy="5.937" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="601.784" cy="20.891" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="609.794" cy="15.906" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="619.807" cy="9.924" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="627.818" cy="4.94" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="636.829" cy="63.761" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="644.84" cy="58.776" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="654.853" cy="52.795" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="662.863" cy="47.81" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="626.816" cy="60.77" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="634.826" cy="55.785" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="644.84" cy="49.804" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="652.85" cy="44.819" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="630.822" cy="46.813" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="638.832" cy="41.828" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="648.845" cy="35.846" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="656.855" cy="30.861" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="630.822" cy="23.882" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="638.832" cy="18.897" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="648.845" cy="12.915" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="656.855" cy="7.931" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="628.819" cy="36.843" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="636.829" cy="31.858" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="646.842" cy="25.876" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="654.853" cy="20.891" fill="%23F8D24E" rx="4.005" ry="3.988"/%3E%3Cellipse cx="589.267" cy="17.9" fill="%23F8D24E" rx="3.505" ry="3.988"/%3E%3Cellipse cx="597.278" cy="12.915" fill="%23F8D24E" rx="3.505" ry="3.988"/%3E%3Cellipse cx="607.291" cy="6.933" fill="%23F8D24E" rx="3.505" ry="3.988"/%3E%3Cpath fill="%23F8D24E" d="M606.289 21.888c1.936 0 3.505-1.785 3.505-3.988 0-2.202-1.569-3.988-3.505-3.988-1.935 0-3.504 1.786-3.504 3.988 0 2.203 1.569 3.988 3.504 3.988Z"/%3E%3Cellipse cx="4.005" cy="59" fill="%23F8D24E" rx="4.005" ry="4"/%3E%3Cellipse cx="12.015" cy="54" fill="%23F8D24E" rx="4.005" ry="4"/%3E%3Cellipse cx="22.029" cy="48" fill="%23F8D24E" rx="4.005" ry="4"/%3E%3Cellipse cx="30.039" cy="43" fill="%23F8D24E" rx="4.005" ry="4"/%3E%3Cellipse cx="52.068" cy="61" fill="%23F8D24E" rx="4.005" ry="4"/%3E%3Cellipse cx="60.078" cy="56" fill="%23F8D24E" rx="4.005" ry="4"/%3E%3Cellipse cx="70.091" cy="50" fill="%23F8D24E" rx="4.005" ry="4"/%3E%3Cellipse cx="78.102" cy="45" fill="%23F8D24E" rx="4.005" ry="4"/%3E%3Cellipse cx="70.592" cy="58" fill="%23F8D24E" rx="3.505" ry="4"/%3E%3Cellipse cx="78.602" cy="53" fill="%23F8D24E" rx="3.505" ry="4"/%3E%3Cellipse cx="87.614" cy="48" fill="%23F8D24E" rx="3.505" ry="4"/%3E%3Cellipse cx="96.626" cy="43" fill="%23F8D24E" rx="3.505" ry="4"/%3E%3Cellipse cx="106.639" cy="35" fill="%23F8D24E" rx="3.505" ry="4"/%3E%3Cellipse cx="85.612" cy="39" fill="%23F8D24E" rx="3.505" ry="4"/%3E%3Cellipse cx="34.044" cy="61" fill="%23F8D24E" rx="4.005" ry="4"/%3E%3Cellipse cx="42.054" cy="56" fill="%23F8D24E" rx="4.005" ry="4"/%3E%3Cellipse cx="52.068" cy="50" fill="%23F8D24E" rx="4.005" ry="4"/%3E%3Cellipse cx="60.078" cy="45" fill="%23F8D24E" rx="4.005" ry="4"/%3E%3Cellipse cx="18.023" cy="60" fill="%23F8D24E" rx="4.005" ry="4"/%3E%3Cellipse cx="26.034" cy="55" fill="%23F8D24E" rx="4.005" ry="4"/%3E%3Cellipse cx="36.047" cy="49" fill="%23F8D24E" rx="4.005" ry="4"/%3E%3Cellipse cx="44.057" cy="44" fill="%23F8D24E" rx="4.005" ry="4"/%3E%3C/svg%3E');
     }
 
-    @media screen and (min-width: 1200px) {
-      max-width: 1200px;
-
+    @include media('desktop') {
       padding-top: 45px;
       padding-bottom: 103px;
 
@@ -42,7 +35,7 @@
   }
 
   &-wrap__content {
-    @media screen and (max-width: 767.98px) {
+    @include media('tablet', max) {
       display: none;
     }
   }
@@ -51,13 +44,11 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width: 768px) {
-      display: flex;
+    @include media('tablet') {
       gap: 20px;
     }
 
-    @media screen and (min-width: 1200px) {
-      display: flex;
+    @include media('desktop') {
       gap: 16px;
     }
   }
@@ -65,6 +56,7 @@
   &__inner-text {
     display: flex;
     flex-direction: column;
+    gap: 4px;
 
     font-weight: 900;
     font-size: 28px;
@@ -72,11 +64,11 @@
     text-align: right;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #131313;
 
-    @media screen and (min-width: 1200px) {
+    @include media('desktop') {
+      gap: 1px;
+
       font-size: 46px;
-      line-height: 1.22;
     }
   }
 
@@ -85,11 +77,11 @@
     font-size: 8px;
     line-height: 1.25;
     text-align: right;
-    color: #fcfcfc;
+    color: getColor('primary-text');
 
     text-transform: lowercase;
 
-    @media screen and (min-width: 1200px) {
+    @include media('desktop') {
       font-size: 14px;
       line-height: 1.21;
     }
@@ -105,24 +97,25 @@
     line-height: 1.27;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #fcfcfc;
+    color: getColor('primary-text');
 
-    @media screen and (min-width: 768px) {
+    @include media('tablet') {
       margin-bottom: 24px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include media('desktop') {
       width: 367px;
 
+      margin-bottom: 28px;
+
       font-size: 38px;
-      line-height: 1.26;
     }
 
     &--font {
       font-size: 34px;
       line-height: 0.97;
 
-      @media screen and (min-width: 1200px) {
+      @include media('desktop') {
         font-size: 38px;
         line-height: 1.26;
       }
@@ -134,13 +127,12 @@
     gap: 12px;
     align-items: center;
 
-    @media screen and (min-width: 768px) {
-      margin-bottom: 46px;
+    @include media('tablet') {
+      margin-bottom: 39px;
     }
 
-    @media screen and (min-width: 1200px) {
-      gap: 34px;
-      margin-bottom: 120px;
+    @include media('desktop') {
+      margin-bottom: 109px;
     }
   }
 
@@ -153,10 +145,9 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #000000;
 
     background-color: transparent;
-    border: 2px solid #f8d24e;
+    border: 2px solid getColor('tretiary-text');
     border-radius: 8px;
 
     cursor: url("data:image/svg+xml;charset=utf8,%3Csvg width='19' height='24' viewBox='0 0 19 24' fill='none' xmlns='http://www.w3.org/2000/svg%27%3E%3Cpath d='M6.04696 2.01171L16.9811 12.2169C18.8522 13.9633 17.8177 17.1 15.2748 17.3907L11.1573 17.8612C10.124 17.9793 9.15329 18.4167 8.38025 19.1124L6.0069 21.2484C4.07633 22.9859 1 21.6159 1 19.0186V4.20487C1 1.58174 4.12929 0.221893 6.04696 2.01171Z' stroke='%23131313' stroke-width='2'/%3E%3C/svg%3E"),
@@ -165,33 +156,31 @@
     @include animated(color, border-color);
 
     &:hover {
-      border: 2px solid #0a8817;
+      border: 2px solid getColor('link-hover');
       border-radius: 8px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include media('desktop') {
+      padding: 12px 34px;
       font-size: 14px;
       line-height: 1.29;
-      color: #131313;
 
       border-radius: 10px;
 
       &:hover {
-        border: 2px solid #0a8817;
-        border-radius: 10px;
+        border: 2px solid getColor('link-hover');
       }
 
       &:focus {
-        color: #fcfcfc;
-        border: 2px solid #0a8817;
-        border-radius: 10px;
+        color: getColor('link-focus');
+        border: 2px solid getColor('link-hover');
       }
     }
 
-    &--next {
+    &--color {
       text-decoration-line: underline;
       background-color: transparent;
-      color: #f8d24e;
+      color: getColor('tretiary-text');
 
       border: none;
 
@@ -199,22 +188,23 @@
         pointer;
 
       &:hover {
-        color: #0a8817;
+        color: getColor('link-hover');
       }
 
       &:focus {
-        color: #fcfcfc;
+        color: getColor('link-focus');
       }
 
-      @media screen and (min-width: 1200px) {
+      @include media('desktop') {
+        padding: 12px 22px;
+
         font-size: 14px;
         line-height: 17px;
         display: flex;
         align-items: center;
         text-align: center;
         text-decoration-line: underline;
-
-        color: #f8d24e;
+        color: getColor('tretiary-text');
       }
     }
   }
@@ -223,33 +213,37 @@
     width: 177px;
     position: absolute;
     bottom: 0%;
-    left: 50%;
+    right: 92px;
 
-    transform: translateX(-50%);
+    @include media('tablet', max) {
+      left: 30%;
 
-    @media screen and (min-width: 768px) {
-      width: 268px;
-
-      left: 80%;
-
-      transform: translateX(-80%);
+      transform: translateX(-30%);
     }
 
-    @media screen and (min-width: 1200px) {
+    @include media('tablet') {
+      width: 268px;
+
+      right: 92px;
+
+      transform: translateX(-92px);
+    }
+
+    @include media('desktop') {
       width: 456px;
 
-      left: 85%;
+      right: 92px;
 
-      transform: translateX(-85%);
+      transform: translateX(-92px);
     }
   }
 
   &__snowball {
-    @media screen and (max-width: 767.98px) {
+    @include media('tablet', max) {
       display: none;
     }
 
-    @media screen and (min-width: 768px) {
+    @include media('tablet') {
       width: 152px;
       position: absolute;
       left: 32px;
@@ -258,7 +252,7 @@
       transform: translateX(-32px), translateY(-12px);
     }
 
-    @media screen and (min-width: 1200px) {
+    @include media('desktop') {
       width: 225px;
       position: absolute;
       left: 16px;
@@ -269,48 +263,69 @@
   }
 
   &__text {
-    @media screen and (max-width: 767.98px) {
+    @include media('tablet', max) {
       display: none;
     }
 
-    @media screen and (min-width: 768px) {
+    @include media('tablet') {
       margin-bottom: 12px;
 
       font-size: 12px;
       line-height: 1.42;
-      color: #fcfcfc;
+      color: getColor('primary-text');
     }
 
-    @media screen and (min-width: 1200px) {
+    @include media('desktop') {
+      margin-bottom: 24px;
+
       font-size: 14px;
       line-height: 1.43;
-      color: #fcfcfc;
+      color: getColor('primary-text');
     }
   }
 
   &-wrap__text {
-    @media screen and (max-width: 767.98px) {
+    @include media('tablet', max) {
       display: none;
     }
 
-    @media screen and (min-width: 768px) {
+    @include media('tablet') {
       width: 140px;
 
-      margin-left: 184px;
+      margin-left: 204px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include media('desktop') {
       width: 200px;
 
-      margin-left: 240px;
+      margin-left: 241px;
     }
   }
 
   &__icon {
-    @media screen and (max-width: 767.98px) {
-      display: none;
+    display: inline-block;
+
+    color: getColor('primary-text');
+
+    cursor: url("data:image/svg+xml;charset=utf8,%3Csvg width='19' height='24' viewBox='0 0 19 24' fill='none' xmlns='http://www.w3.org/2000/svg%27%3E%3Cpath d='M6.04696 2.01171L16.9811 12.2169C18.8522 13.9633 17.8177 17.1 15.2748 17.3907L11.1573 17.8612C10.124 17.9793 9.15329 18.4167 8.38025 19.1124L6.0069 21.2484C4.07633 22.9859 1 21.6159 1 19.0186V4.20487C1 1.58174 4.12929 0.221893 6.04696 2.01171Z' stroke='%23131313' stroke-width='2'/%3E%3C/svg%3E"),
+      pointer;
+
+    @include animated(color, border-color);
+
+    &:hover {
+      color: getColor('link-hover');
     }
 
-    fill: #fcfcfc;
+    &:focus {
+      color: getColor('link-focus');
+    }
+
+    &--color {
+      fill: currentColor;
+
+      @include media('tablet', max) {
+        display: none;
+      }
+    }
   }
 }
