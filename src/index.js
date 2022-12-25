@@ -13,4 +13,4 @@ import './js/header/header_burg_btn2';
 import './js/mod-about';
 
 // Radchenko Ivan - Modal ingridients
-import './JS/ingredients-modal';
+import './JS/mod-ingredients';
