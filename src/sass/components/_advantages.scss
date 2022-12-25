@@ -1,13 +1,13 @@
 .advantages {
-  padding-bottom: 64px;
+  padding-bottom: 45px;
   background-color: getColor('main-bg');
 
   @include media('tablet') {
-    padding-bottom: 204px;
+    padding-bottom: 60px;
   }
 
   @include media('desktop') {
-    padding-bottom: 178px;
+    padding-bottom: 80px;
   }
 }
 
