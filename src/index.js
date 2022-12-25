@@ -14,3 +14,6 @@ import './js/mod-about';
 
 // Radchenko Ivan - Modal ingridients
 import './JS/mod-ingredients';
+
+// Rostyslav and Tetiana Nivchyk - Reviews
+import './js/reviews';
