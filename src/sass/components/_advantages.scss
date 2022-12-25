@@ -1,6 +1,14 @@
 .advantages {
   padding-bottom: 64px;
   background-color: getColor('main-bg');
+
+  @include media('tablet') {
+    padding-bottom: 204px;
+  }
+
+  @include media('desktop') {
+    padding-bottom: 178px;
+  }
 }
 
 .advantages__list {
