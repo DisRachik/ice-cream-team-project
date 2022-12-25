@@ -320,8 +320,8 @@
 
 .about__icon {
   fill: #000000;
+}
 
-  &:focus {
-    fill: #FCFCFC;
-  }
+.about__btn:focus .about__icon{
+  fill: #FCFCFC;
 }
