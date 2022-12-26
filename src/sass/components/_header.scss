@@ -55,6 +55,11 @@ background-color: #84A178;
         margin-left: 36px; 
         align-items: center;
     }
+    @media screen and (min-width: 1200px) {
+        display: flex; 
+        margin-left: 0; 
+        align-items: center;
+    }
 }
 
 .header__butt.header__btn-menu {
