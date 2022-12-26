@@ -388,15 +388,3 @@
     justify-content: center;
   }
 }
-
-.contacts--gradient {
-  background: linear-gradient(to top, #84a178 72.5%, transparent 0%);
-
-  @include media('tablet') {
-    background: linear-gradient(to top, #84a178 52%, transparent 0%);
-  }
-
-  @include media('desktop') {
-    background: linear-gradient(to top, #84a178 76%, transparent 0%);
-  }
-}
