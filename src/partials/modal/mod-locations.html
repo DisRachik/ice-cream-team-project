@@ -1,6 +1,10 @@
 <div class="backdrop is-hidden" data-modal-location>
   <div class="modal" data-modal-window>
-    <button class="modal__btn" data-modal-location-close>
+    <button
+      class="modal__btn"
+      aria-label="close the map with our locations"
+      data-modal-location-close
+    >
       <svg width="20" height="20">
         <use
           class="modal__icon"
@@ -10,20 +14,6 @@
     </button>
 
     <strong class="modal__label">Our Locations</strong>
-
-    <!-- <img
-      srcset="
-        ./images/modal-location/modal-location-md-sm@1x.jpg 224w,
-        ./images/modal-location/modal-location-md-sm@2x.jpg 447w,
-        ./images/modal-location/modal-location-lg@1x.jpg    448w,
-        ./images/modal-location/modal-location-lg@2x.jpg    896w
-      "
-      src="./images/modal-location/modal-location-md-sm@1x.jpg"
-      sizes="(min-width: 1200px) 448px, (min-width: 768px) 448px, (min-width: 480px) 224px, 100vw"
-      alt="map"
-      width="224"
-      class="modal__img"
-    /> -->
 
     <iframe
       class="modal__iframe"
