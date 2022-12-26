@@ -13,18 +13,10 @@
 
 .modal-franchise {
   position: absolute;
-  // top: 50%;
-  // left: 50%;
   top: 2%;
   left: 2%;
   width: 95vw;
 
-  // transform: translateX(-50%) translateY(-50%);
-
-  // min-width: 95%;
-
-  // min-width: 280px;
-  // height: 674px;
   padding: 30px;
 
   background: #fcfcfc;
@@ -47,23 +39,13 @@
     transform: translateX(-50%) translateY(-50%);
   }
 
-  // @include media('phone') {
-  //   padding: 28px;
-  // }
-
   @include media('tablet') {
-    // width: 568px;
-    // height: 668px;ranchise__field
-    // padding-left: 58px;
-    // padding-right: 58px;
     top: 50%;
 
     width: 568px;
     height: 95vh;
     max-height: 668px;
 
-    // padding: 32px 60px;
-    // padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 58px;
     padding-right: 58px;
@@ -134,10 +116,6 @@
 }
 
 .franchise__text {
-  //   display: flex;
-  // margin-left: auto;
-  // margin-right: auto;
-
   display: block;
   margin-bottom: 24px;
   font-weight: 400;
@@ -246,6 +224,7 @@
 }
 
 .modal-franchise__icon {
+  fill: currentColor;
   width: 20px;
   height: 20px;
   @include media('tablet') {

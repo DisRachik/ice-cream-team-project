@@ -126,12 +126,21 @@
     align-items: center;
     justify-content: center;
 
+    color: getColor('secondary-text');
+
     border: none;
     background-color: transparent;
+
+    @include animated(color);
+
+    &:hover,
+    &focus {
+      color: getColor('link-hover');
+    }
   }
 
   &__icon {
-    fill: #131313;
+    fill: currentColor;
     width: 20px;
     height: 20px;
 
