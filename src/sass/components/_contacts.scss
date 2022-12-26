@@ -137,6 +137,10 @@
   letter-spacing: 0.04em;
 }
 
+.contacts__aft-title:hover, .contacts__aft-title:focus {
+  color: #0A8817;
+}
+
 .contacts__line {
   width: 100%;
   height: 1px;
@@ -196,6 +200,9 @@
   font-size: 12px;
 }
 
+.contacts__link:hover, .contacts__link:focus {
+  color: #0A8817;
+}
 // BTN
 
 .button {
