@@ -1,14 +1,14 @@
 .gallery {
-  background: linear-gradient(to bottom, #84a178 15.23%, transparent 0%);
+  background: linear-gradient(to bottom, #84a178 15%, transparent 0%);
   padding-bottom: 80px;
 
   @include media('tablet') {
-    background: linear-gradient(to bottom, #84a178 44.04%, transparent 0%);
+    background: linear-gradient(to bottom, #84a178 34%, transparent 0%);
     padding-bottom: 100px;
   }
 
   @include media('desktop') {
-    background: linear-gradient(to bottom, #84a178 23.22%, transparent 0%);
+    background: linear-gradient(to bottom, #84a178 23%, transparent 0%);
     padding-bottom: 140px;
   }
 }

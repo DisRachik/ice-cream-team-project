@@ -295,6 +295,9 @@
   color: #000000;
   background-color: #f8d24e;
 
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (min-width: 768px) {
     margin-left: 0;
   }
@@ -323,6 +326,6 @@
   fill: #000000;
 }
 
-.about__btn:focus .about__icon{
-  fill: #FCFCFC;
+.about__btn:focus .about__icon {
+  fill: #fcfcfc;
 }

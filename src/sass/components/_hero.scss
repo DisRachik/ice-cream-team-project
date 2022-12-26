@@ -2,6 +2,7 @@
   background-color: getColor('main-bg');
 
   &__box {
+    overflow: hidden;
     position: relative;
 
     padding-top: 50px;
@@ -90,7 +91,7 @@
   &__title {
     width: 248px;
 
-    margin-bottom: 32px;
+    padding-bottom: 32px;
 
     font-family: 'Seymour One';
     font-size: 26px;
@@ -100,13 +101,13 @@
     color: getColor('primary-text');
 
     @include media('tablet') {
-      margin-bottom: 24px;
+      padding-bottom: 24px;
     }
 
     @include media('desktop') {
       width: 367px;
 
-      margin-bottom: 28px;
+      padding-bottom: 28px;
 
       font-size: 38px;
     }
@@ -290,15 +291,15 @@
     }
 
     @include media('tablet') {
-      width: 140px;
+      width: 344px;
 
-      margin-left: 204px;
+      padding-left: 204px;
     }
 
     @include media('desktop') {
-      width: 200px;
+      width: 441px;
 
-      margin-left: 241px;
+      padding-left: 241px;
     }
   }
 
