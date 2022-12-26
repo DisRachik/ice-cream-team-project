@@ -14,14 +14,18 @@
   // }
   margin-right: auto;
   margin-left: auto;
-  background-image: linear-gradient(to top, #84a178 72.5%, transparent 0%);
+  background-image: linear-gradient(
+    to bottom,
+    transparent 27.5%,
+    #84a178 27.5%
+  );
 
   @include media('tablet') {
-    background-image: linear-gradient(to top, #84a178 52%, transparent 0%);
+    background-image: linear-gradient(to bottom, transparent 48%, #84a178 48%);
   }
 
   @include media('desktop') {
-    background-image: linear-gradient(to top, #84a178 76%, transparent 0%);
+    background-image: linear-gradient(to bottom, transparent 24%, #84a178 24%);
   }
 }
 
