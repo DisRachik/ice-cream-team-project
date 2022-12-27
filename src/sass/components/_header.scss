@@ -34,7 +34,7 @@
   width: 40px;
   @media screen and (min-width: 768px) {
     width: 48px;
-    z-index: 3;
+    z-index: 4;
   }
   &:hover,
   &:focus {
@@ -245,12 +245,12 @@
   display: none;
 }
 .header__menu {
-  z-index: 3;
+  z-index: 4;
 }
 .mobile__menu {
   @media screen and (max-width: 1199px) {
     opacity: 0;
-    z-index: 2;
+    z-index: 3;
     visibility: hidden;
 
     padding-top: 48px;
