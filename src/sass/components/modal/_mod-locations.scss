@@ -99,6 +99,8 @@
     margin-right: auto;
     text-decoration: none;
 
+    @include animated(background-color, color);
+
     @include media('tablet') {
       width: 145px;
       font-size: 14px;

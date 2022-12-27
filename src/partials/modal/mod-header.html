@@ -1,127 +1,129 @@
-<div class="modal-header is-hidden" data-header-modal>
-  <button
-    type="button"
-    class="modal-batton phons"
-    aria-label="modal-btna"
-    data-header-modal-close
-  >
-    <svg class="modal-svg" width="11px" height="11px">
-      <use
-        href="./images/header/SVG/header_svg.svg#icon-product_card_close"
-      ></use>
-    </svg>
-  </button>
-  <button
-    type="button"
-    class="modal-batton tablet"
-    aria-label="modal-btna"
-    data-header-mod-close
-  >
-    <svg class="modal-svg" width="11px" height="11px">
-      <use
-        href="./images/header/SVG/header_svg.svg#icon-product_card_close"
-      ></use>
-    </svg>
-  </button>
-  <div class="modal__main">
-    <p class="form-titel" id="contact-details-modal">Buy now</p>
-    <form class="form-first js-speaker-form">
-      <div class="header__form-chebox">
-        <input
-          type="checkbox"
-          class="header__checkbox ice__cream"
-          id="ice__cream"
-          name="ice"
-          value="ICE CREAM"
-        />
-        <label for="ice__cream">ICE CREAM</label>
-        <img
-          class="ice__creamimg"
-          srcset="
-            ./images/header/prodact_card/kelsey-curtis.png   1x,
-            ./images/header/prodact_card/kelsey-curtis2x.png 2x
-          "
-          src="./images/header/prodact_card/kelsey-curtis.png"
-          alt="coding"
-          width="132"
-          height="132"
-        />
-        <input
-          type="checkbox"
-          class="header__checkbox ice__coffe"
-          id="ice__coffee"
-          name="ice"
-          value="ICE COFFEE"
-          checked
-        />
-        <label for="ice__coffee">ICE COFFEE</label>
-        <img
-          class="ice__coffeimg"
-          srcset="
-            ./images/header/prodact_card/pariwat-pannium.png   1x,
-            ./images/header/prodact_card/pariwat-pannium2x.png 2x
-          "
-          src="./images/header/prodact_card/pariwat-pannium.png"
-          alt="mobile_programms"
-          width="132"
-          height="132"
-        />
-        <input
-          type="checkbox"
-          class="header__checkbox milkshake"
-          id="milkshake"
-          name="ice"
-          value="MILKSHAKE"
-        />
-        <label for="milkshake">MILKSHAKE</label>
-        <img
-          class="milkshakeimg"
-          srcset="
-            ./images/header/prodact_card/victor-rutka.png   1x,
-            ./images/header/prodact_card/victor-rutka2x.png 2x
-          "
-          src="./images/header/prodact_card/victor-rutka.png"
-          alt="designe"
-          width="132"
-          height="132"
-        />
-      </div>
-      <div class="form-first-one">
-        <label class="form-first-mater" for="username"></label>
-        <input
-          class="form-imput"
-          placeholder="Name"
-          type="text"
-          name="username"
-          id="username"
-          pattern="[a-z]{2,12}"
-          title="2 to 12 lowercase letters"
-        />
-      </div>
-      <div class="form-second form-first-one">
-        <label class="form-first-mater" for="telephone"></label>
-        <input
-          class="form-imput"
-          placeholder="Phone"
-          type="tel"
-          name="telephone"
-          id="telephone"
-          pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
-          title="Please enter valid phone number Ex:0554816385"
-        />
-      </div>
-      <label class="form-first-mater" for="feedback"></label>
-      <textarea
-        class="form-first-text"
-        id="feedback"
-        name="feedback"
-        rows="3"
-        placeholder="Comment"
-        minlength="10"
-        maxlength="140"
-        title="The text must be at least 10 characters"
-      ></textarea>
-      <button class="form-button" type="submit">Submit</button>
-    </form>
+<div class="header__backdrop is-hidden" data-header-modal>
+  <div class="modal-header">
+    <button
+      type="button"
+      class="modal-batton phons"
+      aria-label="modal-btna"
+      data-header-modal-close
+    >
+      <svg class="modal-svg" width="11px" height="11px">
+        <use
+          href="./images/header/SVG/header_svg.svg#icon-product_card_close"
+        ></use>
+      </svg>
+    </button>
+    <button
+      type="button"
+      class="modal-batton tablet"
+      aria-label="modal-btna"
+      data-header-mod-close
+    >
+      <svg class="modal-svg" width="11px" height="11px">
+        <use
+          href="./images/header/SVG/header_svg.svg#icon-product_card_close"
+        ></use>
+      </svg>
+    </button>
+    <div class="modal__main">
+      <p class="form-titel" id="contact-details-modal">Buy now</p>
+      <form class="form-first js-speaker-form">
+        <div class="header__form-chebox">
+          <input
+            type="checkbox"
+            class="header__checkbox ice__cream"
+            id="ice__cream"
+            name="ice"
+            value="ICE CREAM"
+          />
+          <label for="ice__cream">ICE CREAM</label>
+          <img
+            class="ice__creamimg"
+            srcset="
+              ./images/header/prodact_card/kelsey-curtis.png   1x,
+              ./images/header/prodact_card/kelsey-curtis2x.png 2x
+            "
+            src="./images/header/prodact_card/kelsey-curtis.png"
+            alt="coding"
+            width="132"
+            height="132"
+          />
+          <input
+            type="checkbox"
+            class="header__checkbox ice__coffe"
+            id="ice__coffee"
+            name="ice"
+            value="ICE COFFEE"
+            checked
+          />
+          <label for="ice__coffee">ICE COFFEE</label>
+          <img
+            class="ice__coffeimg"
+            srcset="
+              ./images/header/prodact_card/pariwat-pannium.png   1x,
+              ./images/header/prodact_card/pariwat-pannium2x.png 2x
+            "
+            src="./images/header/prodact_card/pariwat-pannium.png"
+            alt="mobile_programms"
+            width="132"
+            height="132"
+          />
+          <input
+            type="checkbox"
+            class="header__checkbox milkshake"
+            id="milkshake"
+            name="ice"
+            value="MILKSHAKE"
+          />
+          <label for="milkshake">MILKSHAKE</label>
+          <img
+            class="milkshakeimg"
+            srcset="
+              ./images/header/prodact_card/victor-rutka.png   1x,
+              ./images/header/prodact_card/victor-rutka2x.png 2x
+            "
+            src="./images/header/prodact_card/victor-rutka.png"
+            alt="designe"
+            width="132"
+            height="132"
+          />
+        </div>
+        <div class="form-first-one">
+          <label class="form-first-mater" for="username"></label>
+          <input
+            class="form-imput"
+            placeholder="Name"
+            type="text"
+            name="username"
+            id="username"
+            pattern="[a-z]{2,12}"
+            title="2 to 12 lowercase letters"
+          />
+        </div>
+        <div class="form-second form-first-one">
+          <label class="form-first-mater" for="telephone"></label>
+          <input
+            class="form-imput"
+            placeholder="Phone"
+            type="tel"
+            name="telephone"
+            id="telephone"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+            title="Please enter valid phone number Ex:0554816385"
+          />
+        </div>
+        <label class="form-first-mater" for="feedback"></label>
+        <textarea
+          class="form-first-text"
+          id="feedback"
+          name="feedback"
+          rows="3"
+          placeholder="Comment"
+          minlength="10"
+          maxlength="140"
+          title="The text must be at least 10 characters"
+        ></textarea>
+        <button class="form-button" type="submit">Submit</button>
+      </form>
+    </div>
   </div>
 </div>

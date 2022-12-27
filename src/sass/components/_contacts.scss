@@ -135,10 +135,13 @@
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.04em;
+
+  @include animated(color);
 }
 
-.contacts__aft-title:hover, .contacts__aft-title:focus {
-  color: #0A8817;
+.contacts__aft-title:hover,
+.contacts__aft-title:focus {
+  color: #0a8817;
 }
 
 .contacts__line {
@@ -198,10 +201,13 @@
   text-align: left;
   font-weight: 500;
   font-size: 12px;
+
+  @include animated(color);
 }
 
-.contacts__link:hover, .contacts__link:focus {
-  color: #0A8817;
+.contacts__link:hover,
+.contacts__link:focus {
+  color: #0a8817;
 }
 // BTN
 

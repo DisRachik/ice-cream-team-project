@@ -10,6 +10,7 @@
   opacity: 1;
 
   @include animated(opacity);
+  z-index: 3;
 }
 
 .ingridents-modal-is-hidden {
