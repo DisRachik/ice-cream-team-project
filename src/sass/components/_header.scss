@@ -133,8 +133,23 @@
     margin-left: 290px;
   }
 }
+.navigation__li {
+  &:not(:first-child) {
+    padding-top: 16px;
+  }
+  &:not(:last-child) {
+    padding-bottom: 16px;
+  }
+  @include media('tablet') {
+    &:not(:first-child) {
+      padding-top: 16px;
+    }
+    &:not(:last-child) {
+      padding-bottom: 16px;
+    }
+  }
+}
 .navigation__li:not(:last-child) {
-  padding-bottom: 32px;
   @media screen and (min-width: 1200px) {
     margin-right: 50px;
     padding-bottom: 0;
@@ -155,8 +170,6 @@
     font-size: 48px;
     line-height: calc(59 / 48);
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
   @media screen and (min-width: 1200px) {
     font-weight: 700;
@@ -196,14 +209,14 @@
   width: 32px;
   height: 32px;
   margin-left: auto;
-  fill: getColor('link-focus');
+  fill: getColor('primary-text');
   @include animated(fill, transform);
 }
 
 .menu__svg {
   &:hover,
   &:focus {
-    fill: getColor('link-focus');
+    fill: getColor('link-default');
     cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' fill='none'%3E%3Cpath stroke='%23131313' stroke-width='2' d='m18.047 14.012 10.934 10.205c1.871 1.746.837 4.883-1.706 5.174l-4.118.47a5 5 0 0 0-2.777 1.251l-2.373 2.136c-1.93 1.738-5.007.368-5.007-2.23V16.206c0-2.623 3.13-3.983 5.047-2.193Z'/%3E%3C/svg%3E")
         12 12,
       pointer;
@@ -216,6 +229,8 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
+  z-index: 4;
 
   @media screen and (min-width: 1199px) {
     display: none;
@@ -244,16 +259,18 @@
 .header__menu.is-open .menu__open {
   display: none;
 }
-.header__menu {
-  z-index: 4;
-}
+// .header__menu {
+//   z-index: 4;
+
+//   color: getColor('primary-text');
+// }
 .mobile__menu {
   @media screen and (max-width: 1199px) {
     opacity: 0;
     z-index: 3;
     visibility: hidden;
 
-    padding-top: 48px;
+    padding-top: 35px;
     padding-bottom: 64px;
     background: getColor('main-bg');
     position: absolute;
@@ -266,6 +283,10 @@
       transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
     transform: translate(-1000px, 0);
 
+    @media screen and (max-height: 505px) {
+      min-height: 506px;
+    }
+
     &.is-open {
       opacity: 1;
       transform: translate(0, 0);
@@ -274,6 +295,9 @@
       @media screen and (min-width: 768px) {
         top: 0%;
       }
+    }
+    @include min-max('phone', 'tablet') {
+      padding-top: 48px;
     }
   }
   @media screen and (min-width: 1200px) {

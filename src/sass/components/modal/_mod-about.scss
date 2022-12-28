@@ -7,10 +7,26 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
 
+  overflow-y: auto;
+
   @media screen and (min-width: 768px) {
     width: 568px;
-    height: 449px;
+    height: 95vh;
+    max-height: 449px;
     padding: 32px 60px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    background: linear-gradient(to top, #c9d6ff, #e2e2e2);
+  }
+  &::-webkit-scrollbar-track {
+    border: 1px solid getColor('link-default');
+  }
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #ffefba, #ffffff);
+    border: 1px solid #ee508f;
+    border-radius: 15px;
   }
 }
 

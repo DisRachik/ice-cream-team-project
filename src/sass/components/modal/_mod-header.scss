@@ -31,6 +31,8 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
 
+  overflow-y: auto;
+
   @media screen and (min-width: 0px) and (max-width: 767px) {
     max-width: 280px;
     width: 100%;
@@ -54,8 +56,6 @@
     max-width: 100%;
     max-height: 100%;
     background-color: #fcfcfc;
-
-    overflow-y: hidden;
   }
 
   @media screen and (min-width: 1200px) {
@@ -110,6 +110,8 @@
   height: 30px;
   margin-top: 8px;
   margin-right: 8px;
+
+  color: getColor('secondary-text');
   transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
   @media screen and (min-width: 0px) and (max-width: 767px) {
     margin-top: 8px;
@@ -126,6 +128,7 @@
 }
 .modal-batton:hover,
 .modal-batton:focus {
+  color: getColor('link-hover');
   cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' fill='none'%3E%3Cpath stroke='%23131313' stroke-width='2' d='m18.047 14.012 10.934 10.205c1.871 1.746.837 4.883-1.706 5.174l-4.118.47a5 5 0 0 0-2.777 1.251l-2.373 2.136c-1.93 1.738-5.007.368-5.007-2.23V16.206c0-2.623 3.13-3.983 5.047-2.193Z'/%3E%3C/svg%3E")
       12 12,
     pointer;
