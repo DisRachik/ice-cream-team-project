@@ -152,7 +152,12 @@
 .navigation__li:not(:last-child) {
   @media screen and (min-width: 1200px) {
     margin-right: 50px;
-    padding-bottom: 0;
+    padding: 0;
+  }
+}
+.navigation__li:last-child {
+  @media screen and (min-width: 1200px) {
+    padding: 0;
   }
 }
 .navigation__link {
